@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- 単色ロゴマーク(ヘッダー・印刷物用)。fill/stroke の色を差し替えて使用 -->
-  <circle cx="512" cy="512" r="440" fill="none" stroke="#111113" stroke-width="56"/>
-  <g transform="rotate(45 512 512)">
-    <polygon points="512,222 622,512 402,512" fill="#111113"/>
-    <polygon points="402,512 622,512 512,802" fill="#111113" opacity="0.45"/>
-    <circle cx="512" cy="512" r="30" fill="#FFFFFF"/>
-  </g>
+  <!-- 単色ロゴマーク(案Dの e モノグラム/背景透過)。色は fill / stroke を差し替えて使用 -->
+  <path d="M 832 641 A 345 345 0 1 1 832 383"
+        fill="none" stroke="#2B2933" stroke-width="132" stroke-linecap="round"/>
+  <polygon points="209,512 539,431 539,593" fill="#2B2933" opacity="0.5"/>
+  <polygon points="539,431 944,512 539,593" fill="#2B2933"/>
 </svg>

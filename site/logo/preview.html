@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>エクスペ ロゴ刷新案</title>
+  <title>exSpace ロゴ刷新案 v2</title>
   <style>
     :root {
       --bg: #FAFAF8;
-      --ink: #17171A;
+      --ink: #2B2933;
       --sub: #6B6B70;
       --card: #FFFFFF;
       --line: #E8E8E4;
-      --accent: #4F46E5;
+      --lavender: #B3A1D6;
+      --cream: #F7F2E8;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -23,16 +24,18 @@
     }
     .wrap { max-width: 880px; margin: 0 auto; }
     h1 { font-size: 28px; letter-spacing: 0.04em; margin-bottom: 8px; }
-    .lead { color: var(--sub); font-size: 14px; margin-bottom: 48px; }
+    .lead { color: var(--sub); font-size: 14px; margin-bottom: 40px; }
     .concept {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 24px 28px;
-      margin-bottom: 48px;
+      margin-bottom: 24px;
       font-size: 14px;
     }
-    .concept strong { color: var(--accent); }
+    .concept strong { color: var(--lavender); filter: brightness(0.75); }
+    .palette { display: flex; gap: 12px; align-items: center; margin: 16px 0 48px; font-size: 12px; color: var(--sub); }
+    .chip { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); }
     section { margin-bottom: 64px; }
     h2 { font-size: 18px; margin-bottom: 4px; }
     .badge {
@@ -59,7 +62,7 @@
     .row.dark { background: #1C1C1F; border-color: #2A2A2E; }
     .cell { text-align: center; }
     .cell span { display: block; font-size: 11px; color: var(--sub); margin-top: 10px; }
-    .icon { border-radius: 22.37%; display: block; }
+    .icon { border-radius: 22.37%; display: block; overflow: hidden; }
     .icon.s160 { width: 160px; height: 160px; }
     .icon.s96 { width: 96px; height: 96px; }
     .icon.s48 { width: 48px; height: 48px; }
@@ -67,63 +70,82 @@
     table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 16px; }
     th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
     th { color: var(--sub); font-weight: normal; white-space: nowrap; }
+    details { margin-top: 48px; }
+    summary { cursor: pointer; font-size: 14px; color: var(--sub); }
+    details .row { margin-top: 16px; }
   </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>エクスペ アプリアイコン刷新案</h1>
-  <p class="lead">ターゲット:デザイン感度の高い20代 / モチーフ:方位磁針(継承) / 方向性:要素を削ぎ落としたシンプルな造形</p>
+  <h1>exSpace アプリアイコン刷新案 v2</h1>
+  <p class="lead">現行ロゴのコンパスモチーフと配色(クリーム × チャコール × ラベンダー)を継承しつつ、「e」と「x」の文字を造形に組み込んだ3案です。</p>
 
   <div class="concept">
-    <strong>デザインの考え方</strong><br>
-    方位磁針を「文字盤・目盛り・N/E/S/W」まで描き込むのではなく、<strong>針そのもの</strong>まで抽象化しました。
-    針は「これから向かう方向=体験の入口」の象徴として残し、それ以外の要素は思い切って削除。
-    小さなホーム画面サイズ(48px)でも一目でエクスペと分かる強い骨格を優先しています。
+    <strong>v2 の考え方</strong><br>
+    現行ロゴは「コンパスローズ+ロゴタイプ」の構成でしたが、アイコン単体でブランド名まで想起させるため、
+    <strong>e と x をコンパスの部品として描く</strong>方向に振りました。
+    e はコンパスの外周リング、x は針(4点スター)と役割を割り当てています。いただいた手描きスケッチも案Eとして清書しています。
   </div>
 
-  <!-- 案B -->
+  <div class="palette">
+    <div class="chip" style="background:#F7F2E8"></div>
+    <div class="chip" style="background:#2B2933"></div>
+    <div class="chip" style="background:#B3A1D6"></div>
+    現行ロゴから継承したパレット:クリーム #F7F2E8 / チャコール #2B2933 / ラベンダー #B3A1D6
+  </div>
+
+  <!-- 案D -->
   <section>
-    <h2>案B|モノクローム × リング<span class="badge">推奨</span></h2>
-    <p class="note">黒地 × エレクトリックライムの針。リングは方位磁針のベゼルの名残り。針を45°傾け「北東=前進・上昇」を指させています。ファッション・カルチャー系の感度が高い層に最も刺さる、現行トレンド(acid色 × ミニマル)の構成です。</p>
-    <div class="row dark">
-      <div class="cell"><div class="icon s160"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#111113"/><circle cx="512" cy="512" r="330" fill="none" stroke="#FFFFFF" stroke-width="22" opacity="0.92"/><g transform="rotate(45 512 512)"><polygon points="512,262 606,512 418,512" fill="#D9F154"/><polygon points="418,512 606,512 512,762" fill="#FFFFFF" opacity="0.4"/><circle cx="512" cy="512" r="26" fill="#111113"/></g></svg></div><span>160px</span></div>
-      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#111113"/><circle cx="512" cy="512" r="330" fill="none" stroke="#FFFFFF" stroke-width="22" opacity="0.92"/><g transform="rotate(45 512 512)"><polygon points="512,262 606,512 418,512" fill="#D9F154"/><polygon points="418,512 606,512 512,762" fill="#FFFFFF" opacity="0.4"/><circle cx="512" cy="512" r="26" fill="#111113"/></g></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#111113"/><circle cx="512" cy="512" r="330" fill="none" stroke="#FFFFFF" stroke-width="22" opacity="0.92"/><g transform="rotate(45 512 512)"><polygon points="512,262 606,512 418,512" fill="#D9F154"/><polygon points="418,512 606,512 512,762" fill="#FFFFFF" opacity="0.4"/><circle cx="512" cy="512" r="26" fill="#111113"/></g></svg></div><span>48px</span></div>
+    <h2>案D|e モノグラム × 針<span class="badge">推奨</span></h2>
+    <p class="note">小文字「e」の骨格そのものをコンパスに。横棒を針に置き換え、リングの開口部を突き抜けて東(=これから向かう先)を指します。西側の針だけラベンダーにして現行の配色を受け継ぎました。1つの図形で e とコンパスを兼ねるため、48pxでも骨格が崩れません。</p>
+    <div class="row">
+      <div class="cell"><div class="icon s160"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><path d="M 725 598 A 230 230 0 1 1 725 426" fill="none" stroke="#2B2933" stroke-width="88" stroke-linecap="round"/><polygon points="310,512 530,458 530,566" fill="#B3A1D6"/><polygon points="530,458 800,512 530,566" fill="#2B2933"/></svg></div><span>160px</span></div>
+      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><path d="M 725 598 A 230 230 0 1 1 725 426" fill="none" stroke="#2B2933" stroke-width="88" stroke-linecap="round"/><polygon points="310,512 530,458 530,566" fill="#B3A1D6"/><polygon points="530,458 800,512 530,566" fill="#2B2933"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><path d="M 725 598 A 230 230 0 1 1 725 426" fill="none" stroke="#2B2933" stroke-width="88" stroke-linecap="round"/><polygon points="310,512 530,458 530,566" fill="#B3A1D6"/><polygon points="530,458 800,512 530,566" fill="#2B2933"/></svg></div><span>48px</span></div>
     </div>
   </section>
 
-  <!-- 案A -->
+  <!-- 案E -->
   <section>
-    <h2>案A|グラデーション × ニードル</h2>
-    <p class="note">インディゴ→バイオレットのグラデーション地に、垂直の針のみ。もっとも王道で万人に受け入れられやすい構成。北(上半分)を白、南を半透明にして方位磁針の「表裏」を表現しています。</p>
+    <h2>案E|x コンパスローズ(スケッチ清書)</h2>
+    <p class="note">いただいた手描きスケッチの構成をそのまま整形した案。交差する2枚の針葉で「x」を描き、途切れた円弧と方位ドットで文字盤の気配を残しています。現行ロゴの世界観に最も近く、移行の違和感が少ない案です。北のドットだけラベンダーで「N」を示します。</p>
     <div class="row">
-      <div class="cell"><div class="icon s160"><svg viewBox="0 0 1024 1024"><defs><linearGradient id="ga1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="1024" height="1024" rx="229" fill="url(#ga1)"/><polygon points="512,232 632,512 392,512" fill="#FFFFFF"/><polygon points="392,512 632,512 512,792" fill="#FFFFFF" opacity="0.42"/></svg></div><span>160px</span></div>
-      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><defs><linearGradient id="ga2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="1024" height="1024" rx="229" fill="url(#ga2)"/><polygon points="512,232 632,512 392,512" fill="#FFFFFF"/><polygon points="392,512 632,512 512,792" fill="#FFFFFF" opacity="0.42"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg viewBox="0 0 1024 1024"><defs><linearGradient id="ga3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="1024" height="1024" rx="229" fill="url(#ga3)"/><polygon points="512,232 632,512 392,512" fill="#FFFFFF"/><polygon points="392,512 632,512 512,792" fill="#FFFFFF" opacity="0.42"/></svg></div><span>48px</span></div>
+      <div class="cell"><div class="icon s160"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><g fill="none" stroke="#2B2933" stroke-width="14" stroke-linecap="round" opacity="0.8"><path d="M 406 221 A 310 310 0 0 1 618 221"/><path d="M 803 406 A 310 310 0 0 1 803 618"/><path d="M 618 803 A 310 310 0 0 1 406 803"/><path d="M 221 618 A 310 310 0 0 1 221 406"/></g><path transform="rotate(45 512 512)" d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#2B2933"/><path transform="rotate(-45 512 512)" d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#B3A1D6"/><circle cx="512" cy="512" r="16" fill="#F7F2E8"/><circle cx="512" cy="112" r="20" fill="#B3A1D6"/><circle cx="912" cy="512" r="14" fill="#2B2933"/><circle cx="512" cy="912" r="14" fill="#2B2933"/><circle cx="112" cy="512" r="14" fill="#2B2933"/></svg></div><span>160px</span></div>
+      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><g fill="none" stroke="#2B2933" stroke-width="14" stroke-linecap="round" opacity="0.8"><path d="M 406 221 A 310 310 0 0 1 618 221"/><path d="M 803 406 A 310 310 0 0 1 803 618"/><path d="M 618 803 A 310 310 0 0 1 406 803"/><path d="M 221 618 A 310 310 0 0 1 221 406"/></g><path transform="rotate(45 512 512)" d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#2B2933"/><path transform="rotate(-45 512 512)" d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#B3A1D6"/><circle cx="512" cy="512" r="16" fill="#F7F2E8"/><circle cx="512" cy="112" r="20" fill="#B3A1D6"/><circle cx="912" cy="512" r="14" fill="#2B2933"/><circle cx="512" cy="912" r="14" fill="#2B2933"/><circle cx="112" cy="512" r="14" fill="#2B2933"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><g fill="none" stroke="#2B2933" stroke-width="14" stroke-linecap="round" opacity="0.8"><path d="M 406 221 A 310 310 0 0 1 618 221"/><path d="M 803 406 A 310 310 0 0 1 803 618"/><path d="M 618 803 A 310 310 0 0 1 406 803"/><path d="M 221 618 A 310 310 0 0 1 221 406"/></g><path transform="rotate(45 512 512)" d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#2B2933"/><path transform="rotate(-45 512 512)" d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#B3A1D6"/><circle cx="512" cy="512" r="16" fill="#F7F2E8"/><circle cx="512" cy="112" r="20" fill="#B3A1D6"/><circle cx="912" cy="512" r="14" fill="#2B2933"/><circle cx="512" cy="912" r="14" fill="#2B2933"/><circle cx="112" cy="512" r="14" fill="#2B2933"/></svg></div><span>48px</span></div>
     </div>
   </section>
 
-  <!-- 案C -->
+  <!-- 案F -->
   <section>
-    <h2>案C|コンパスローズ × クリーム</h2>
-    <p class="note">方位磁針の文字盤に描かれる「コンパスローズ」を4点スターまで抽象化。クリーム地 × 墨色 × 赤ドット(北の印)の編集的な配色で、雑誌・エディトリアル寄りの世界観。サブブランドやスプラッシュ画面にも展開しやすい案です。</p>
+    <h2>案F|ex ロックアップ</h2>
+    <p class="note">幾何学的な小文字「e」と、現行ロゴの4点スターを「x」に見立てて並べた案。ブランド名の頭2文字がそのまま読めるため想起力は最強ですが、要素が2つになるぶん最小サイズではやや繊細です。アイコンよりもヘッダーロゴ・スプラッシュ向き。</p>
     <div class="row">
-      <div class="cell"><div class="icon s160"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#F6F1E7"/><path d="M512 152 Q572 452 872 512 Q572 572 512 872 Q452 572 152 512 Q452 452 512 152 Z" fill="#17171A"/><circle cx="760" cy="240" r="30" fill="#FF4D2E"/></svg></div><span>160px</span></div>
-      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#F6F1E7"/><path d="M512 152 Q572 452 872 512 Q572 572 512 872 Q452 572 152 512 Q452 452 512 152 Z" fill="#17171A"/><circle cx="760" cy="240" r="30" fill="#FF4D2E"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" rx="229" fill="#F6F1E7"/><path d="M512 152 Q572 452 872 512 Q572 572 512 872 Q452 572 152 512 Q452 452 512 152 Z" fill="#17171A"/><circle cx="760" cy="240" r="30" fill="#FF4D2E"/></svg></div><span>48px</span></div>
+      <div class="cell"><div class="icon s160"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><path d="M 381 653 A 150 150 0 1 1 471 563" fill="none" stroke="#2B2933" stroke-width="64"/><rect x="148" y="480" width="364" height="64" fill="#2B2933"/><path d="M 710 322 Q 742 480 900 512 Q 742 544 710 702 Q 678 544 520 512 Q 678 480 710 322 Z" fill="#B3A1D6"/></svg></div><span>160px</span></div>
+      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><path d="M 381 653 A 150 150 0 1 1 471 563" fill="none" stroke="#2B2933" stroke-width="64"/><rect x="148" y="480" width="364" height="64" fill="#2B2933"/><path d="M 710 322 Q 742 480 900 512 Q 742 544 710 702 Q 678 544 520 512 Q 678 480 710 322 Z" fill="#B3A1D6"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F7F2E8"/><path d="M 381 653 A 150 150 0 1 1 471 563" fill="none" stroke="#2B2933" stroke-width="64"/><rect x="148" y="480" width="364" height="64" fill="#2B2933"/><path d="M 710 322 Q 742 480 900 512 Q 742 544 710 702 Q 678 544 520 512 Q 678 480 710 322 Z" fill="#B3A1D6"/></svg></div><span>48px</span></div>
     </div>
   </section>
 
   <section>
     <h2>比較まとめ</h2>
     <table>
-      <tr><th>案</th><th>印象</th><th>向いているケース</th></tr>
-      <tr><td><strong>B(推奨)</strong></td><td>先鋭的・カルチャー感・今っぽい</td><td>デザイン感度の高い20代に最優先で刺したいとき。ダークなホーム画面でも映える</td></tr>
-      <tr><td>A</td><td>王道・クリーン・テック感</td><td>幅広い層への安心感を優先するとき。ストアでの視認性が高い</td></tr>
-      <tr><td>C</td><td>編集的・上品・余白のある知性</td><td>コンテンツ/メディア色を打ち出すとき。ブランド展開の自由度が高い</td></tr>
+      <tr><th>案</th><th>e / x の使い方</th><th>向いているケース</th></tr>
+      <tr><td><strong>D(推奨)</strong></td><td>e がリング、針が方位を指す</td><td>アプリアイコンの本命。1図形で完結し最小サイズに最も強い</td></tr>
+      <tr><td>E</td><td>x が針葉のクロス</td><td>現行ロゴからの連続性を最優先するとき。スケッチの方向性そのまま</td></tr>
+      <tr><td>F</td><td>e + x を並置</td><td>ブランド名の想起を最優先するとき。ヘッダー・スプラッシュ向き</td></tr>
     </table>
-    <p class="note" style="margin-top:20px">単色ロゴマーク(ヘッダー・印刷物用)は <code>expe-mark.svg</code> として別途用意。針とリングのみで構成し、1色でも成立します。</p>
+    <p class="note" style="margin-top:20px">単色ロゴマーク(<code>expe-mark.svg</code>)は案Dの e モノグラムを背景透過・1色仕様で用意しています。</p>
   </section>
+
+  <details>
+    <summary>アーカイブ:v1 の3案(ブランドカラー確定前の提案)</summary>
+    <div class="row dark">
+      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#111113"/><circle cx="512" cy="512" r="330" fill="none" stroke="#FFFFFF" stroke-width="22" opacity="0.92"/><g transform="rotate(45 512 512)"><polygon points="512,262 606,512 418,512" fill="#D9F154"/><polygon points="418,512 606,512 512,762" fill="#FFFFFF" opacity="0.4"/><circle cx="512" cy="512" r="26" fill="#111113"/></g></svg></div><span>v1-B</span></div>
+      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><defs><linearGradient id="gaz" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#A855F7"/></linearGradient></defs><rect width="1024" height="1024" fill="url(#gaz)"/><polygon points="512,232 632,512 392,512" fill="#FFFFFF"/><polygon points="392,512 632,512 512,792" fill="#FFFFFF" opacity="0.42"/></svg></div><span>v1-A</span></div>
+      <div class="cell"><div class="icon s96"><svg viewBox="0 0 1024 1024"><rect width="1024" height="1024" fill="#F6F1E7"/><path d="M512 152 Q572 452 872 512 Q572 572 512 872 Q452 572 152 512 Q452 452 512 152 Z" fill="#17171A"/><circle cx="760" cy="240" r="30" fill="#FF4D2E"/></svg></div><span>v1-C</span></div>
+    </div>
+  </details>
 </div>
 </body>
 </html>

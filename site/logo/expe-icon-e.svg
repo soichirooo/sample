@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- 案E: x コンパスローズ(手描きスケッチをベースに整形)
+       交差する2枚の針葉で x を描き、破線円と方位ドットで文字盤の名残りを表現 -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <!-- 文字盤の名残り:4つの円弧 -->
+  <g fill="none" stroke="#2B2933" stroke-width="14" stroke-linecap="round" opacity="0.8">
+    <path d="M 406 221 A 310 310 0 0 1 618 221"/>
+    <path d="M 803 406 A 310 310 0 0 1 803 618"/>
+    <path d="M 618 803 A 310 310 0 0 1 406 803"/>
+    <path d="M 221 618 A 310 310 0 0 1 221 406"/>
+  </g>
+  <!-- x:交差する2枚の針葉 -->
+  <path transform="rotate(45 512 512)"
+        d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#2B2933"/>
+  <path transform="rotate(-45 512 512)"
+        d="M 212 512 Q 512 396 812 512 Q 512 628 212 512 Z" fill="#B3A1D6"/>
+  <circle cx="512" cy="512" r="16" fill="#F7F2E8"/>
+  <!-- 方位ドット(北はラベンダー) -->
+  <circle cx="512" cy="112" r="20" fill="#B3A1D6"/>
+  <circle cx="912" cy="512" r="14" fill="#2B2933"/>
+  <circle cx="512" cy="912" r="14" fill="#2B2933"/>
+  <circle cx="112" cy="512" r="14" fill="#2B2933"/>
+</svg>

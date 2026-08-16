@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- 案F: ex ロックアップ
+       幾何学的な小文字 e と、現行ロゴの4点スターを x に見立てて並べる -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <!-- e -->
+  <path d="M 381 653 A 150 150 0 1 1 471 563"
+        fill="none" stroke="#2B2933" stroke-width="64"/>
+  <rect x="148" y="480" width="364" height="64" fill="#2B2933"/>
+  <!-- x(4点スター) -->
+  <path d="M 710 322 Q 742 480 900 512 Q 742 544 710 702 Q 678 544 520 512 Q 678 480 710 322 Z"
+        fill="#B3A1D6"/>
+</svg>

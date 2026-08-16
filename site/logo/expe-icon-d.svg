@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- 案D: e モノグラム × 針(推奨)
+       小文字 e の骨格。横棒をコンパスの針に置き換え、リングの開口部を東へ突き抜ける -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <!-- e のリング(右側に開口) -->
+  <path d="M 725 598 A 230 230 0 1 1 725 426"
+        fill="none" stroke="#2B2933" stroke-width="88" stroke-linecap="round"/>
+  <!-- 針:西半分はラベンダー、東(指す側)はチャコール -->
+  <polygon points="310,512 530,458 530,566" fill="#B3A1D6"/>
+  <polygon points="530,458 800,512 530,566" fill="#2B2933"/>
+</svg>
