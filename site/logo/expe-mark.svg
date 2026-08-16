@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- 単色ロゴマーク(ヘッダー・印刷物用)。fill/stroke の色を差し替えて使用 -->
+  <circle cx="512" cy="512" r="440" fill="none" stroke="#111113" stroke-width="56"/>
+  <g transform="rotate(45 512 512)">
+    <polygon points="512,222 622,512 402,512" fill="#111113"/>
+    <polygon points="402,512 622,512 512,802" fill="#111113" opacity="0.45"/>
+    <circle cx="512" cy="512" r="30" fill="#FFFFFF"/>
+  </g>
+</svg>

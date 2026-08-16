@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- 案B: モノクローム × リング(推し案) -->
+  <rect width="1024" height="1024" rx="229" fill="#111113"/>
+  <!-- ベゼル(外周リング) -->
+  <circle cx="512" cy="512" r="330" fill="none" stroke="#FFFFFF" stroke-width="22" opacity="0.92"/>
+  <!-- 針:45°回転で北東(進行方向)を指す -->
+  <g transform="rotate(45 512 512)">
+    <polygon points="512,262 606,512 418,512" fill="#D9F154"/>
+    <polygon points="418,512 606,512 512,762" fill="#FFFFFF" opacity="0.4"/>
+    <circle cx="512" cy="512" r="26" fill="#111113"/>
+  </g>
+</svg>

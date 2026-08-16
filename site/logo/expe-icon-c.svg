@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- 案C: コンパスローズ(4点スター) × クリーム -->
+  <rect width="1024" height="1024" rx="229" fill="#F6F1E7"/>
+  <path d="M512 152 Q572 452 872 512 Q572 572 512 872 Q452 572 152 512 Q452 452 512 152 Z" fill="#17171A"/>
+  <!-- 北を示すアクセントドット -->
+  <circle cx="760" cy="240" r="30" fill="#FF4D2E"/>
+</svg>
