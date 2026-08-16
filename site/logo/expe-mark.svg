@@ -1,17 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- 単色ロゴマーク(v6「クワイエット・コンパス」/背景透過)。残像は透過で表現し1色でも成立 -->
-  <circle cx="512" cy="512" r="316" fill="none" stroke="#2B2933" stroke-width="14"/>
-  <g transform="rotate(-30 512 512)">
-    <path d="M 512 512 C 489 440, 486 345, 500 276 A 12 12 0 0 1 524 276 C 538 345, 535 440, 512 512 Z"
-          fill="#2B2933" opacity="0.35"/>
-    <path d="M 512 512 C 489 584, 486 679, 500 748 A 12 12 0 0 0 524 748 C 538 679, 535 584, 512 512 Z"
-          fill="#2B2933" opacity="0.2"/>
-  </g>
-  <g transform="rotate(30 512 512)">
+  <!-- 単色ロゴマーク(v7「じぶんの方角」/背景透過)。珠は輪郭のみで表現し1色でも成立 -->
+  <path d="M 795 362 A 320 320 0 1 1 691 247"
+        fill="none" stroke="#2B2933" stroke-width="17" stroke-linecap="round"/>
+  <circle cx="512" cy="192" r="8" fill="#2B2933" opacity="0.7"/>
+  <circle cx="750" cy="298" r="24" fill="none" stroke="#2B2933" stroke-width="12"/>
+  <g transform="rotate(48 512 512)">
     <path d="M 512 512 C 489 440, 486 345, 500 276 A 12 12 0 0 1 524 276 C 538 345, 535 440, 512 512 Z"
           fill="#2B2933"/>
-    <path d="M 512 512 C 489 584, 486 679, 500 748 A 12 12 0 0 0 524 748 C 538 679, 535 584, 512 512 Z"
-          fill="#2B2933" opacity="0.5"/>
+    <path d="M 512 512 C 500 552, 498 592, 505 620 A 9 9 0 0 0 519 620 C 526 592, 524 552, 512 512 Z"
+          fill="#2B2933" opacity="0.45"/>
   </g>
   <circle cx="512" cy="512" r="10" fill="#FFFFFF" stroke="#2B2933" stroke-width="7"/>
 </svg>

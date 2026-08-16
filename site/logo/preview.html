@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exSpace ロゴ刷新案 v6</title>
+  <title>exSpace ロゴ v7「じぶんの方角」</title>
   <style>
     :root {
       --bg: #FAFAF8;
@@ -25,26 +25,19 @@
     .wrap { max-width: 880px; margin: 0 auto; }
     h1 { font-size: 28px; letter-spacing: 0.04em; margin-bottom: 8px; }
     .lead { color: var(--sub); font-size: 14px; margin-bottom: 40px; }
-    .concept {
+    .statement {
+      font-size: 22px;
+      letter-spacing: 0.06em;
+      text-align: center;
+      padding: 40px 24px;
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 24px 28px;
-      margin-bottom: 48px;
-      font-size: 14px;
+      margin-bottom: 16px;
     }
+    .statement small { display: block; font-size: 13px; color: var(--sub); margin-top: 12px; letter-spacing: 0; }
     section { margin-bottom: 64px; }
     h2 { font-size: 18px; margin-bottom: 4px; }
-    .badge {
-      display: inline-block;
-      background: var(--ink);
-      color: #fff;
-      font-size: 11px;
-      border-radius: 999px;
-      padding: 2px 10px;
-      margin-left: 8px;
-      vertical-align: middle;
-    }
     .note { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
     .row {
       display: flex;
@@ -59,134 +52,101 @@
     .cell { text-align: center; }
     .cell span { display: block; font-size: 11px; color: var(--sub); margin-top: 10px; }
     .icon { border-radius: 22.37%; display: block; overflow: hidden; }
-    .icon.s240 { width: 240px; height: 240px; }
+    .icon.s280 { width: 280px; height: 280px; }
     .icon.s96 { width: 96px; height: 96px; }
     .icon.s48 { width: 48px; height: 48px; }
     .icon.s32 { width: 32px; height: 32px; }
     svg { display: block; width: 100%; height: 100%; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+    th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--sub); font-weight: normal; white-space: nowrap; }
     ul { padding-left: 1.4em; font-size: 14px; }
-    details { margin-top: 48px; }
-    summary { cursor: pointer; font-size: 14px; color: var(--sub); }
-    details .row { margin-top: 16px; }
   </style>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <symbol id="ic-k" viewBox="0 0 1024 1024">
+    <symbol id="ic-main" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <circle cx="512" cy="512" r="316" fill="none" stroke="#2B2933" stroke-width="13"/>
-      <circle cx="512" cy="196" r="15" fill="#B3A1D6"/>
-      <g transform="rotate(-30 512 512)">
-        <path d="M 512 512 C 489 440, 486 345, 500 276 A 12 12 0 0 1 524 276 C 538 345, 535 440, 512 512 Z"
-              fill="#B3A1D6"/>
-        <path d="M 512 512 C 489 584, 486 679, 500 748 A 12 12 0 0 0 524 748 C 538 679, 535 584, 512 512 Z"
-              fill="#B3A1D6" opacity="0.45"/>
-      </g>
-      <g transform="rotate(30 512 512)">
+      <path d="M 795 362 A 320 320 0 1 1 691 247"
+            fill="none" stroke="#2B2933" stroke-width="16" stroke-linecap="round"/>
+      <circle cx="512" cy="192" r="8" fill="#2B2933" opacity="0.7"/>
+      <circle cx="750" cy="298" r="26" fill="#B3A1D6"/>
+      <g transform="rotate(48 512 512)">
         <path d="M 512 512 C 489 440, 486 345, 500 276 A 12 12 0 0 1 524 276 C 538 345, 535 440, 512 512 Z"
               fill="#2B2933"/>
-        <path d="M 512 512 C 489 584, 486 679, 500 748 A 12 12 0 0 0 524 748 C 538 679, 535 584, 512 512 Z"
-              fill="#2B2933" opacity="0.5"/>
+        <path d="M 512 512 C 500 552, 498 592, 505 620 A 9 9 0 0 0 519 620 C 526 592, 524 552, 512 512 Z"
+              fill="#B3A1D6"/>
       </g>
       <circle cx="512" cy="512" r="10" fill="#F7F2E8" stroke="#2B2933" stroke-width="7"/>
     </symbol>
-    <symbol id="ic-k-small" viewBox="0 0 1024 1024">
+    <symbol id="ic-small" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <circle cx="512" cy="512" r="316" fill="none" stroke="#2B2933" stroke-width="24"/>
-      <circle cx="512" cy="196" r="20" fill="#B3A1D6"/>
-      <g transform="rotate(-30 512 512)">
-        <path d="M 512 512 C 481 440, 477 345, 496 272 A 16 16 0 0 1 528 272 C 547 345, 543 440, 512 512 Z"
-              fill="#B3A1D6"/>
-        <path d="M 512 512 C 481 584, 477 679, 496 752 A 16 16 0 0 0 528 752 C 547 679, 543 584, 512 512 Z"
-              fill="#B3A1D6" opacity="0.55"/>
-      </g>
-      <g transform="rotate(30 512 512)">
+      <path d="M 795 362 A 320 320 0 1 1 691 247"
+            fill="none" stroke="#2B2933" stroke-width="26" stroke-linecap="round"/>
+      <circle cx="512" cy="192" r="11" fill="#2B2933" opacity="0.7"/>
+      <circle cx="750" cy="298" r="32" fill="#B3A1D6"/>
+      <g transform="rotate(48 512 512)">
         <path d="M 512 512 C 481 440, 477 345, 496 272 A 16 16 0 0 1 528 272 C 547 345, 543 440, 512 512 Z"
               fill="#2B2933"/>
-        <path d="M 512 512 C 481 584, 477 679, 496 752 A 16 16 0 0 0 528 752 C 547 679, 543 584, 512 512 Z"
-              fill="#2B2933" opacity="0.55"/>
+        <path d="M 512 512 C 497 552, 494 592, 502 622 A 11 11 0 0 0 522 622 C 530 592, 527 552, 512 512 Z"
+              fill="#B3A1D6"/>
       </g>
       <circle cx="512" cy="512" r="13" fill="#F7F2E8" stroke="#2B2933" stroke-width="9"/>
-    </symbol>
-    <symbol id="ic-j-old" viewBox="0 0 1024 1024">
-      <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <circle cx="512" cy="512" r="350" fill="none" stroke="#2B2933" stroke-width="18"/>
-      <circle cx="512" cy="512" r="295" fill="none" stroke="#2B2933" stroke-width="11"
-              stroke-linecap="round" stroke-dasharray="0.1 51.5" opacity="0.45"/>
-      <circle cx="512" cy="112" r="12" fill="#B3A1D6"/>
-      <circle cx="912" cy="512" r="7" fill="#2B2933" opacity="0.65"/>
-      <circle cx="512" cy="912" r="7" fill="#2B2933" opacity="0.65"/>
-      <circle cx="112" cy="512" r="7" fill="#2B2933" opacity="0.65"/>
-      <g transform="rotate(-30 512 512)">
-        <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
-              fill="#B3A1D6" opacity="0.9"/>
-        <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
-              fill="#B3A1D6" opacity="0.5"/>
-      </g>
-      <g transform="rotate(30 512 512)">
-        <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
-              fill="#2B2933"/>
-        <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
-              fill="#2B2933" opacity="0.55"/>
-      </g>
-      <circle cx="512" cy="512" r="12" fill="#F7F2E8" stroke="#2B2933" stroke-width="8"/>
     </symbol>
   </defs>
 </svg>
 
 <div class="wrap">
-  <h1>exSpace アプリアイコン刷新案 v6「クワイエット・コンパス」</h1>
-  <p class="lead">ご共有いただいた「おしゃれなロゴ」コラムの原則——情報量を極端に減らす・線数を絞る・色は1〜2色・余白を大きく——に沿って v5 を削ぎ落とした版です。</p>
+  <h1>exSpace ロゴ v7「じぶんの方角」</h1>
+  <p class="lead">サービスの定義(あなたの代わりに「次」を決めてくれる/世界で最もその人の「次に行きたい」を理解している)から逆算した、コンセプト先行の1案です。</p>
 
-  <div class="concept">
-    <strong>v5 から削ったもの / 残したもの</strong>
-    <ul>
-      <li><strong>削除</strong>:ドットの目盛り(36個)、東西南のドット(3個)、外側に浮いていた北のドット。「語りすぎ」の要素を全て外しました。</li>
-      <li><strong>統合</strong>:北の印は、リングの12時の位置に重ねたラベンダーの珠1つに。時計のインデックスのように、要素を増やさず方位を示します。</li>
-      <li><strong>拡大した余白</strong>:リングを一回り小さくし、周囲の余白を約19%まで拡大。マークが空間に浮かぶ設計です。</li>
-      <li><strong>残存</strong>:しずく型の2本の針(現在=チャコール、残像=ラベンダー)と軸。針が振れて x を描く物語、北濃・南淡の塗り分けはそのまま。</li>
-    </ul>
-    <p style="margin-top:8px">最終的な要素は「リング・珠・針2本・軸」の4つ、色はチャコール+ラベンダーの2色のみです。</p>
+  <div class="statement">
+    北ではなく、あなたの「次」を指す針。
+    <small>コンパスの針は普通、誰にとっても同じ北を指す。exSpace の針だけは、その人の「次に行きたい」を指す。</small>
   </div>
 
-  <section>
-    <h2>本命<span class="badge">推奨</span></h2>
+  <section style="margin-top:48px">
+    <h2>本命</h2>
     <div class="row">
-      <div class="cell"><div class="icon s240"><svg><use href="#ic-k"/></svg></div><span>240px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-k"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-k"/></svg></div><span>48px(ホーム画面)</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-k"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s280"><svg><use href="#ic-main"/></svg></div><span>280px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-main"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-main"/></svg></div><span>48px(ホーム画面)</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-main"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
+    <h2>意味と形の対応</h2>
+    <table>
+      <tr><th>形</th><th>意味</th></tr>
+      <tr><td>針が北の点を指していない</td><td>核の意味「自分だけの方角を見つける」。頂点の小さな点=誰にとっても同じ「正解」の北。針はそれを静かに無視して、その人の方角を指す</td></tr>
+      <tr><td>ラベンダーの珠</td><td>アプリが差し出す「例えばこんな空間どうですか?」という提案の一点(example×Space)。針はこの珠をまっすぐ指す</td></tr>
+      <tr><td>リングの開口</td><td>既知の円の外へ広がっていく空間(expand×Space)。珠は開口部=円の縁に浮かび、その先は未知(experience×Space)</td></tr>
+      <tr><td>しずく型の針・細いリング</td><td>尖りのない繊細な線。儚さと女性性はここで担保</td></tr>
+      <tr><td>要素数</td><td>リング・北の点・珠・針・軸の5つ、色は2色。可読性は針と珠の2点に集中</td></tr>
+    </table>
+  </section>
+
+  <section>
     <h2>小サイズ用(64px以下での出し分け)</h2>
-    <p class="note">構成は同一のまま、リングと針を太らせた強度優先版。ファビコン・通知アイコン用。</p>
+    <p class="note">構成は同一のまま、線・針・珠を太らせた強度優先版。ファビコン・通知アイコン用。</p>
     <div class="row">
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-k-small"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-k-small"/></svg></div><span>48px</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-k-small"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-small"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-small"/></svg></div><span>48px</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-small"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
     <h2>ファイル構成</h2>
     <ul>
-      <li><code>expe-icon-k.svg</code> — 本命(アプリアイコン用マスター 1024px)</li>
-      <li><code>expe-icon-k-small.svg</code> — 小サイズ用(64px以下)</li>
-      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(1色印刷でも成立)</li>
+      <li><code>expe-icon.svg</code> — アプリアイコン用マスター(1024px)</li>
+      <li><code>expe-icon-small.svg</code> — 小サイズ用(64px以下)</li>
+      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(珠は輪郭で表現、1色印刷でも成立)</li>
     </ul>
   </section>
-
-  <details>
-    <summary>比較用:v5(削ぎ落とし前)</summary>
-    <div class="row">
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-j-old"/></svg></div><span>v5</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-k"/></svg></div><span>v6(本命)</span></div>
-    </div>
-  </details>
 </div>
 </body>
 </html>
