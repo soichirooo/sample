@@ -1,23 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v10「コンパスと x」ライト
-       開いた文字盤の中で、両端針(北=チャコール/南=ラベンダー)が
-       開口部の先に浮かぶ x(=あなたの「次」のしるし)を指す -->
+  <!-- v11「e と星」ライト
+       幾何学的な小文字 e。横棒は抽象化した針で、先端が輪の外へ抜けて
+       星 x(=あなたの「次」のしるし)を指す。e→x で "ex" -->
   <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
-  <!-- 文字盤:針が指す北東だけ開いている(expand) -->
-  <path d="M 745 395 A 300 300 0 1 1 635 285"
-        fill="none" stroke="#2B2933" stroke-width="20" stroke-linecap="round"/>
-  <!-- 両端針:しずく型の対称ペア -->
-  <g transform="rotate(45 485 545)">
-    <path d="M 485 545 C 458 478, 454 388, 470 308 A 15 15 0 0 1 500 308 C 516 388, 512 478, 485 545 Z"
-          fill="#2B2933"/>
-    <path d="M 485 545 C 458 612, 454 702, 470 782 A 15 15 0 0 0 500 782 C 516 702, 512 612, 485 545 Z"
-          fill="#B3A1D6"/>
-  </g>
-  <!-- 軸 -->
-  <circle cx="485" cy="545" r="13" fill="#F7F2E8" stroke="#2B2933" stroke-width="9"/>
-  <!-- x:次の場所のしるし -->
-  <g transform="rotate(45 860 180)">
-    <path d="M 860 118 Q 871 169 922 180 Q 871 191 860 242 Q 849 191 798 180 Q 849 169 860 118 Z"
-          fill="#B3A1D6" stroke="#B3A1D6" stroke-width="20" stroke-linejoin="round"/>
+  <!-- e の輪(開口は右下) -->
+  <path d="M 514 672 A 215 215 0 1 1 585 520"
+        fill="none" stroke="#2B2933" stroke-width="66" stroke-linecap="round"/>
+  <!-- 横棒=抽象化した針。先端だけ輪の外へ -->
+  <polygon points="140,480 534,480 730,512 534,544 140,544"
+           fill="#2B2933" stroke="#2B2933" stroke-width="12" stroke-linejoin="round"/>
+  <!-- 星 x:次の場所のしるし -->
+  <g transform="rotate(45 840 512)">
+    <path d="M 840 440 Q 853 499 912 512 Q 853 525 840 584 Q 827 525 768 512 Q 827 499 840 440 Z"
+          fill="#B3A1D6" stroke="#B3A1D6" stroke-width="22" stroke-linejoin="round"/>
   </g>
 </svg>

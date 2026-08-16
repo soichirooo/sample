@@ -1,17 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v10「コンパスと x」フィールド -->
+  <!-- v11「e と星」フィールド -->
   <rect width="1024" height="1024" rx="229" fill="#B3A1D6"/>
-  <path d="M 745 395 A 300 300 0 1 1 635 285"
-        fill="none" stroke="#F7F2E8" stroke-width="20" stroke-linecap="round"/>
-  <g transform="rotate(45 485 545)">
-    <path d="M 485 545 C 458 478, 454 388, 470 308 A 15 15 0 0 1 500 308 C 516 388, 512 478, 485 545 Z"
-          fill="#2B2933"/>
-    <path d="M 485 545 C 458 612, 454 702, 470 782 A 15 15 0 0 0 500 782 C 516 702, 512 612, 485 545 Z"
-          fill="#F7F2E8"/>
-  </g>
-  <circle cx="485" cy="545" r="13" fill="#B3A1D6" stroke="#F7F2E8" stroke-width="9"/>
-  <g transform="rotate(45 860 180)">
-    <path d="M 860 118 Q 871 169 922 180 Q 871 191 860 242 Q 849 191 798 180 Q 849 169 860 118 Z"
-          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="20" stroke-linejoin="round"/>
+  <path d="M 514 672 A 215 215 0 1 1 585 520"
+        fill="none" stroke="#F7F2E8" stroke-width="66" stroke-linecap="round"/>
+  <polygon points="140,480 534,480 730,512 534,544 140,544"
+           fill="#F7F2E8" stroke="#F7F2E8" stroke-width="12" stroke-linejoin="round"/>
+  <g transform="rotate(45 840 512)">
+    <path d="M 840 440 Q 853 499 912 512 Q 853 525 840 584 Q 827 525 768 512 Q 827 499 840 440 Z"
+          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="22" stroke-linejoin="round"/>
   </g>
 </svg>
