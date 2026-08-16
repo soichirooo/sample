@@ -1,17 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v11「e と星」ライト
-       幾何学的な小文字 e。横棒は抽象化した針で、先端が輪の外へ抜けて
-       星 x(=あなたの「次」のしるし)を指す。e→x で "ex" -->
+  <!-- v12「正統進化」ライト(基準案)
+       現行 exSpace ロゴの骨格を継承:細い文字盤/ドット目盛り/十字の細針/
+       中央のラベンダー X 星/頂の小さなきらめき。アイコン用に要素を整理 -->
   <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
-  <!-- e の輪(開口は右下) -->
-  <path d="M 514 672 A 215 215 0 1 1 585 520"
-        fill="none" stroke="#2B2933" stroke-width="66" stroke-linecap="round"/>
-  <!-- 横棒=抽象化した針。先端だけ輪の外へ -->
-  <polygon points="140,480 534,480 730,512 534,544 140,544"
-           fill="#2B2933" stroke="#2B2933" stroke-width="12" stroke-linejoin="round"/>
-  <!-- 星 x:次の場所のしるし -->
-  <g transform="rotate(45 840 512)">
-    <path d="M 840 440 Q 853 499 912 512 Q 853 525 840 584 Q 827 525 768 512 Q 827 499 840 440 Z"
-          fill="#B3A1D6" stroke="#B3A1D6" stroke-width="22" stroke-linejoin="round"/>
+  <!-- 文字盤 -->
+  <circle cx="512" cy="512" r="340" fill="none" stroke="#2B2933" stroke-width="14"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#2B2933" stroke-width="9"
+          stroke-linecap="round" stroke-dasharray="0.1 65" opacity="0.5"/>
+  <!-- 十字の細針(N/E/S/W) -->
+  <g fill="#2B2933">
+    <polygon points="512,257 525,352 512,424 499,352"/>
+    <polygon points="767,512 672,525 600,512 672,499"/>
+    <polygon points="512,767 499,672 512,600 525,672"/>
+    <polygon points="257,512 352,499 424,512 352,525"/>
   </g>
+  <!-- X 星(コンパスローズ)=exSpace の x -->
+  <g transform="rotate(45 512 512)">
+    <path d="M 512 362 Q 528 496 662 512 Q 528 528 512 662 Q 496 528 362 512 Q 496 496 512 362 Z"
+          fill="#B3A1D6"/>
+  </g>
+  <!-- 軸 -->
+  <circle cx="512" cy="512" r="9" fill="#F7F2E8" stroke="#2B2933" stroke-width="7"/>
+  <!-- 北のきらめき -->
+  <path d="M 512 77 Q 517 100 540 105 Q 517 110 512 133 Q 507 110 484 105 Q 507 100 512 77 Z" fill="#B3A1D6"/>
 </svg>

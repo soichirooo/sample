@@ -1,22 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v11「e と星」ナイト -->
+  <!-- v12「正統進化」ナイト -->
   <defs>
-    <radialGradient id="sky" cx="0.80" cy="0.30" r="1.15">
-      <stop offset="0" stop-color="#4E4168"/>
+    <radialGradient id="sky" cx="0.5" cy="0.35" r="1.1">
+      <stop offset="0" stop-color="#453A5E"/>
       <stop offset="0.55" stop-color="#2E2940"/>
       <stop offset="1" stop-color="#201D28"/>
     </radialGradient>
   </defs>
   <rect width="1024" height="1024" rx="229" fill="url(#sky)"/>
-  <circle cx="250" cy="250" r="5" fill="#F7F2E8" opacity="0.5"/>
-  <circle cx="700" cy="830" r="4" fill="#F7F2E8" opacity="0.35"/>
-  <path d="M 514 672 A 215 215 0 1 1 585 520"
-        fill="none" stroke="#F7F2E8" stroke-width="66" stroke-linecap="round"/>
-  <polygon points="140,480 534,480 730,512 534,544 140,544"
-           fill="#F7F2E8" stroke="#F7F2E8" stroke-width="12" stroke-linejoin="round"/>
-  <circle cx="840" cy="512" r="92" fill="#C9B6EA" opacity="0.2"/>
-  <g transform="rotate(45 840 512)">
-    <path d="M 840 440 Q 853 499 912 512 Q 853 525 840 584 Q 827 525 768 512 Q 827 499 840 440 Z"
-          fill="#DCCBF2" stroke="#DCCBF2" stroke-width="22" stroke-linejoin="round"/>
+  <circle cx="512" cy="512" r="340" fill="none" stroke="#F7F2E8" stroke-width="14"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#F7F2E8" stroke-width="9"
+          stroke-linecap="round" stroke-dasharray="0.1 65" opacity="0.5"/>
+  <g fill="#F7F2E8">
+    <polygon points="512,257 525,352 512,424 499,352"/>
+    <polygon points="767,512 672,525 600,512 672,499"/>
+    <polygon points="512,767 499,672 512,600 525,672"/>
+    <polygon points="257,512 352,499 424,512 352,525"/>
   </g>
+  <circle cx="512" cy="512" r="160" fill="#C9B6EA" opacity="0.15"/>
+  <g transform="rotate(45 512 512)">
+    <path d="M 512 362 Q 528 496 662 512 Q 528 528 512 662 Q 496 528 362 512 Q 496 496 512 362 Z"
+          fill="#DCCBF2"/>
+  </g>
+  <circle cx="512" cy="512" r="9" fill="#2E2940" stroke="#F7F2E8" stroke-width="7"/>
+  <path d="M 512 77 Q 517 100 540 105 Q 517 110 512 133 Q 507 110 484 105 Q 507 100 512 77 Z" fill="#DCCBF2"/>
 </svg>

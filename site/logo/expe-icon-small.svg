@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- v12「正統進化」小サイズ専用(64px以下)
+       目盛り・北のきらめきを省き、線と針を太らせた強度優先版。骨格は同一 -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <circle cx="512" cy="512" r="340" fill="none" stroke="#2B2933" stroke-width="26"/>
+  <g fill="#2B2933">
+    <polygon points="512,248 531,356 512,436 493,356"/>
+    <polygon points="776,512 668,531 588,512 668,493"/>
+    <polygon points="512,776 493,668 512,588 531,668"/>
+    <polygon points="248,512 356,493 436,512 356,531"/>
+  </g>
+  <g transform="rotate(45 512 512)">
+    <path d="M 512 362 Q 528 496 662 512 Q 528 528 512 662 Q 496 528 362 512 Q 496 496 512 362 Z"
+          fill="#B3A1D6" stroke="#B3A1D6" stroke-width="26" stroke-linejoin="round"/>
+  </g>
+  <circle cx="512" cy="512" r="12" fill="#F7F2E8" stroke="#2B2933" stroke-width="9"/>
+</svg>

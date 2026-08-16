@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exSpace ロゴ 論点整理</title>
+  <style>
+    :root {
+      --bg: #FAFAF8;
+      --ink: #2B2933;
+      --sub: #6B6B70;
+      --card: #FFFFFF;
+      --line: #E8E8E4;
+      --lavender: #B3A1D6;
+      --cream: #F7F2E8;
+      --ok: #3D8361;
+      --ng: #C25450;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+      line-height: 1.9;
+      padding: 64px 24px 96px;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; }
+    h1 { font-size: 26px; letter-spacing: 0.04em; margin-bottom: 8px; }
+    .lead { color: var(--sub); font-size: 14px; margin-bottom: 48px; }
+    section { margin-bottom: 56px; }
+    h2 { font-size: 18px; margin-bottom: 12px; padding-left: 12px; border-left: 4px solid var(--lavender); }
+    p, li { font-size: 14px; }
+    ul, ol { padding-left: 1.5em; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px 28px;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--card); border-radius: 12px; overflow: hidden; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    thead th { background: #F1F0EC; color: var(--sub); font-weight: normal; white-space: nowrap; }
+    .ok { color: var(--ok); font-weight: bold; }
+    .ng { color: var(--ng); font-weight: bold; }
+    .so { color: var(--sub); }
+    .routes { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .route {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .route h3 { font-size: 15px; margin: 12px 0 6px; }
+    .route .thumb { width: 120px; height: 120px; border-radius: 22.37%; overflow: hidden; margin: 0 auto; display: block; }
+    .route p { font-size: 12.5px; color: var(--sub); }
+    .route .pro { color: var(--ok); font-size: 12.5px; }
+    .route .con { color: var(--ng); font-size: 12.5px; }
+    svg { display: block; width: 100%; height: 100%; }
+    .big { font-size: 17px; line-height: 2; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>exSpace ロゴ 論点整理</h1>
+  <p class="lead">v1〜v11 の迷走を止めるための整理です。新しいデザインはこの資料には含まれていません。</p>
+
+  <section>
+    <h2>1. なぜ迷走したか</h2>
+    <div class="card">
+      <p>これまでの往復で出た要望を全部足すと、<strong>1つのマークに8つの仕事</strong>をさせようとしていました。</p>
+      <p style="margin-top:8px">①方位磁針とわかる ②e が読める ③x が読める ④女性的・繊細・儚い ⑤尖らない ⑥シンプル ⑦小サイズで見える ⑧エクスペっぽい</p>
+      <p style="margin-top:12px">このうち<strong>「①絵として方位磁針」と「②③文字として ex」は構造的に両立が難しい</strong>です。文字を立てると絵が消え(v9・v11)、絵を立てると文字が消える(v5・v10)。どちらかを直すたびに反対側が壊れる、モグラ叩きになっていました。責任は提案側(私)の設計にあります。1案ごとに最新のフィードバックだけに最適化して、全体の優先順位を決めずに進めたためです。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. 世の中のロゴはどう解決しているか</h2>
+    <div class="card">
+      <p>強いブランドは、1つのマークに全部を入れず<strong>役割分担</strong>させています。</p>
+      <ul style="margin-top:8px">
+        <li><strong>アプリアイコン</strong>:主役1つだけ(Instagram=カメラ。文字はない)</li>
+        <li><strong>ロゴタイプ</strong>:ブランド名の文字組(「Instagram」の筆記体)。e や x を確実に読ませるのはここの仕事</li>
+        <li><strong>ブランドの世界観</strong>:色・写真・言葉づかいで補強</li>
+      </ul>
+      <p style="margin-top:12px">つまり <strong>決めるべきことは1つ:「アイコンの主役をどれにするか」</strong>。残りはロゴタイプと世界観に分担させれば、全要件は体系全体では満たせます。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 主役の選択肢(これまでの11案は実質この4路線)</h2>
+    <div class="routes">
+      <div class="route">
+        <span class="thumb"><svg viewBox="0 0 1024 1024">
+          <rect width="1024" height="1024" fill="#F7F2E8"/>
+          <circle cx="512" cy="512" r="330" fill="none" stroke="#2B2933" stroke-width="14"/>
+          <circle cx="512" cy="512" r="270" fill="none" stroke="#2B2933" stroke-width="9" stroke-linecap="round" stroke-dasharray="0.1 47" opacity="0.5"/>
+          <g transform="rotate(45 512 512)">
+            <path d="M 512 232 Q 570 480 512 512 Q 454 480 512 232 Z" fill="#B3A1D6"/>
+            <path d="M 512 792 Q 570 544 512 512 Q 454 544 512 792 Z" fill="#B3A1D6" opacity="0.75"/>
+            <path d="M 232 512 Q 480 454 512 512 Q 480 570 232 512 Z" fill="#B3A1D6" opacity="0.75"/>
+            <path d="M 792 512 Q 544 454 512 512 Q 544 570 792 512 Z" fill="#B3A1D6"/>
+          </g>
+          <polygon points="512,300 536,512 512,724 488,512" fill="#2B2933"/>
+          <polygon points="300,512 512,488 724,512 512,536" fill="#2B2933" opacity="0.85"/>
+          <circle cx="512" cy="512" r="14" fill="#F7F2E8" stroke="#2B2933" stroke-width="8"/>
+        </svg></span>
+        <h3>A. 現行ロゴの正統進化</h3>
+        <p>いまの exSpace ロゴ(コンパスローズ+X星)の骨格を保ち、要素を整理して磨く。<strong>実はまだ一度も試していない路線。</strong></p>
+        <p class="pro">◎ エクスペっぽさが確実 / 方位磁針◎ / X も骨格に残る</p>
+        <p class="con">△ 細部が多く最小サイズで潰れやすい→整理が腕の見せ所</p>
+      </div>
+      <div class="route">
+        <span class="thumb"><svg viewBox="0 0 1024 1024">
+          <rect width="1024" height="1024" fill="#F7F2E8"/>
+          <path d="M 745 395 A 300 300 0 1 1 635 285" fill="none" stroke="#2B2933" stroke-width="20" stroke-linecap="round"/>
+          <g transform="rotate(45 485 545)">
+            <path d="M 485 545 C 458 478, 454 388, 470 308 A 15 15 0 0 1 500 308 C 516 388, 512 478, 485 545 Z" fill="#2B2933"/>
+            <path d="M 485 545 C 458 612, 454 702, 470 782 A 15 15 0 0 0 500 782 C 516 702, 512 612, 485 545 Z" fill="#B3A1D6"/>
+          </g>
+          <circle cx="485" cy="545" r="13" fill="#F7F2E8" stroke="#2B2933" stroke-width="9"/>
+          <g transform="rotate(45 860 180)">
+            <path d="M 860 118 Q 871 169 922 180 Q 871 191 860 242 Q 849 191 798 180 Q 849 169 860 118 Z" fill="#B3A1D6" stroke="#B3A1D6" stroke-width="20" stroke-linejoin="round"/>
+          </g>
+        </svg></span>
+        <h3>B. 方位磁針の絵</h3>
+        <p>文字盤+針+星(v10系)。ex はロゴタイプに任せる。</p>
+        <p class="pro">◎ 方位磁針が一目 / コンセプトも語れる</p>
+        <p class="con">✕ アイコン単体では ex が読めない / 針の形の好みが決め手(雫はNG済み)</p>
+      </div>
+      <div class="route">
+        <span class="thumb"><svg viewBox="0 0 1024 1024">
+          <rect width="1024" height="1024" fill="#F7F2E8"/>
+          <path d="M 514 672 A 215 215 0 1 1 585 520" fill="none" stroke="#2B2933" stroke-width="66" stroke-linecap="round"/>
+          <polygon points="140,480 534,480 730,512 534,544 140,544" fill="#2B2933" stroke="#2B2933" stroke-width="12" stroke-linejoin="round"/>
+          <g transform="rotate(45 840 512)">
+            <path d="M 840 440 Q 853 499 912 512 Q 853 525 840 584 Q 827 525 768 512 Q 827 499 840 440 Z" fill="#B3A1D6" stroke="#B3A1D6" stroke-width="22" stroke-linejoin="round"/>
+          </g>
+        </svg></span>
+        <h3>C. ex の文字</h3>
+        <p>e+星x のモノグラム(v11系)。方位磁針は針先の暗示のみ。</p>
+        <p class="pro">◎ ブランド名が読める / 小サイズ最強</p>
+        <p class="con">✕ 方位磁針の絵としては弱い(暗示どまり)</p>
+      </div>
+      <div class="route">
+        <span class="thumb"><svg viewBox="0 0 1024 1024">
+          <radialGradient id="rsky" cx="0.82" cy="0.18" r="1.15">
+            <stop offset="0" stop-color="#4E4168"/><stop offset="0.55" stop-color="#2E2940"/><stop offset="1" stop-color="#201D28"/>
+          </radialGradient>
+          <rect width="1024" height="1024" fill="url(#rsky)"/>
+          <g transform="rotate(45 512 512)">
+            <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z" fill="#F7F2E8" stroke="#F7F2E8" stroke-width="18" stroke-linejoin="round"/>
+          </g>
+          <circle cx="838" cy="186" r="72" fill="#C9B6EA" opacity="0.22"/>
+          <circle cx="838" cy="186" r="26" fill="#E3D6F5"/>
+        </svg></span>
+        <h3>D. 情景・詩</h3>
+        <p>針と光だけの抽象画(v8系)。説明せず雰囲気で語る。</p>
+        <p class="pro">◎ 儚さ・詩情は最強 / 差別化◎</p>
+        <p class="con">✕ 方位磁針とも ex とも説明できない(v8→v10 で一度この理由で撤回済み)</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. すでに確定している資産(もう迷わない)</h2>
+    <table>
+      <thead><tr><th></th><th>内容</th></tr></thead>
+      <tr><td class="ok">合意済み</td><td>コンセプト「あなたの『次』を指す針」/ x=星のきらめき / 配色=クリーム×チャコール×ラベンダー(+夜グラデの展開)</td></tr>
+      <tr><td class="ng">NG確定</td><td>雫型の針 / 丸棒のx(針に見えない) / 片側だけの針(時計に見える) / 横棒が輪を貫通する e(θ・Øに見える) / 鋭い三角の針 / ブランドカラー無視の配色</td></tr>
+      <tr><td class="so">保留中</td><td>線の太さの基準(現行ロゴ=極細で儚い ⇔ Instagram=太くて明快。両方を参照として提示されており未決)</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>5. 次の一歩</h2>
+    <div class="card big">
+      <p>決めるのは <strong>「アイコンの主役」= A / B / C / D のどれか1つ</strong>。</p>
+      <p>あわせて<strong>線の太さの基準(繊細寄りか、明快寄りか)</strong>を決めれば、以後はその路線の中だけで磨きます。路線をまたぐ変更はもうしません。</p>
+      <p style="margin-top:8px" class="so" >私のおすすめは A(現行ロゴの正統進化)です。「エクスペっぽさ」の正体は現行ロゴの世界観そのものであり、唯一まだ試していない路線だからです。</p>
+    </div>
+  </section>
+</div>
+</body>
+</html>

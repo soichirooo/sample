@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- 単色ロゴマーク(v11「e と星」/背景透過)。1色で成立 -->
-  <path d="M 514 672 A 215 215 0 1 1 585 520"
-        fill="none" stroke="#2B2933" stroke-width="66" stroke-linecap="round"/>
-  <polygon points="140,480 534,480 730,512 534,544 140,544"
-           fill="#2B2933" stroke="#2B2933" stroke-width="12" stroke-linejoin="round"/>
-  <g transform="rotate(45 840 512)">
-    <path d="M 840 440 Q 853 499 912 512 Q 853 525 840 584 Q 827 525 768 512 Q 827 499 840 440 Z"
-          fill="#2B2933" stroke="#2B2933" stroke-width="22" stroke-linejoin="round"/>
+  <!-- 単色ロゴマーク(v12「正統進化」/背景透過)。星は濃度差で表現、1色で成立 -->
+  <circle cx="512" cy="512" r="340" fill="none" stroke="#2B2933" stroke-width="16"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#2B2933" stroke-width="9"
+          stroke-linecap="round" stroke-dasharray="0.1 65" opacity="0.45"/>
+  <g fill="#2B2933">
+    <polygon points="512,257 525,352 512,424 499,352"/>
+    <polygon points="767,512 672,525 600,512 672,499"/>
+    <polygon points="512,767 499,672 512,600 525,672"/>
+    <polygon points="257,512 352,499 424,512 352,525"/>
   </g>
+  <g transform="rotate(45 512 512)">
+    <path d="M 512 362 Q 528 496 662 512 Q 528 528 512 662 Q 496 528 362 512 Q 496 496 512 362 Z"
+          fill="#2B2933" opacity="0.55"/>
+  </g>
+  <circle cx="512" cy="512" r="9" fill="#FFFFFF" stroke="#2B2933" stroke-width="7"/>
 </svg>
