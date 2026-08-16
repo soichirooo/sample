@@ -1,6 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v8「しずくの針」ナイト
-       夜のグラデーションの中、細い針が光る珠へ向かう。儚さ最優先の塗り -->
+  <!-- v9「ひと筆の ex」ナイト:夜空の中、筆致が光る x へ伸びる -->
   <defs>
     <radialGradient id="sky" cx="0.82" cy="0.18" r="1.15">
       <stop offset="0" stop-color="#4E4168"/>
@@ -9,15 +8,20 @@
     </radialGradient>
   </defs>
   <rect width="1024" height="1024" rx="229" fill="url(#sky)"/>
-  <!-- 遠くの星 -->
-  <circle cx="270" cy="280" r="5" fill="#F7F2E8" opacity="0.5"/>
-  <circle cx="640" cy="800" r="4" fill="#F7F2E8" opacity="0.35"/>
-  <!-- 針(細身) -->
-  <g transform="rotate(45 512 512)">
-    <path d="M 512 150 C 486 300, 466 480, 466 640 A 48 48 0 1 0 560 640 C 560 480, 538 300, 512 150 Z"
-          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="250" cy="300" r="5" fill="#F7F2E8" opacity="0.5"/>
+  <circle cx="620" cy="820" r="4" fill="#F7F2E8" opacity="0.35"/>
+  <path d="M 235 758
+           C 300 690, 355 622, 400 560
+           C 430 515, 425 455, 370 450
+           C 300 445, 255 515, 268 585
+           C 280 650, 345 690, 420 655
+           C 520 605, 650 470, 740 380"
+        fill="none" stroke="#F7F2E8" stroke-width="46" stroke-linecap="round"/>
+  <path d="M 754 394 L 726 366 L 808 312 Z"
+        fill="#F7F2E8" stroke="#F7F2E8" stroke-width="10" stroke-linejoin="round"/>
+  <circle cx="858" cy="182" r="86" fill="#C9B6EA" opacity="0.2"/>
+  <g transform="rotate(45 858 182)">
+    <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
+          fill="#DCCBF2" stroke="#DCCBF2" stroke-width="22" stroke-linejoin="round"/>
   </g>
-  <!-- 珠:光暈をまとう -->
-  <circle cx="838" cy="186" r="72" fill="#C9B6EA" opacity="0.22"/>
-  <circle cx="838" cy="186" r="26" fill="#E3D6F5"/>
 </svg>

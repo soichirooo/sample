@@ -1,13 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v8「しずくの針」ライト
-       コンセプト:あなたの「次」を指す針。
-       要素は対角に大きく流れるしずく型の針と、その先の珠の2つだけ。
-       文字盤・リング・軸は全て廃止 -->
+  <!-- v9「ひと筆の ex」ライト
+       筆記体の e をひと筆で書き、その書き終わりがそのまま針になって
+       x(=あなたの「次」のしるし)を指す。e→x で "ex" が読める -->
   <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
-  <g transform="rotate(45 512 512)">
-    <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z"
-          fill="#2B2933" stroke="#2B2933" stroke-width="18" stroke-linejoin="round"/>
+  <!-- e の筆致と針 -->
+  <path d="M 235 758
+           C 300 690, 355 622, 400 560
+           C 430 515, 425 455, 370 450
+           C 300 445, 255 515, 268 585
+           C 280 650, 345 690, 420 655
+           C 520 605, 650 470, 740 380"
+        fill="none" stroke="#2B2933" stroke-width="52" stroke-linecap="round"/>
+  <path d="M 758 398 L 722 362 L 812 308 Z"
+        fill="#2B2933" stroke="#2B2933" stroke-width="10" stroke-linejoin="round"/>
+  <!-- x:次の場所のしるし(角丸の4点スパークルを45°回転) -->
+  <g transform="rotate(45 858 182)">
+    <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
+          fill="#B3A1D6" stroke="#B3A1D6" stroke-width="22" stroke-linejoin="round"/>
   </g>
-  <!-- 珠:あなたの「次」 -->
-  <circle cx="838" cy="186" r="30" fill="#B3A1D6"/>
 </svg>

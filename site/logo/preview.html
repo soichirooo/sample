@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exSpace ロゴ v8「しずくの針」</title>
+  <title>exSpace ロゴ v9「ひと筆の ex」</title>
   <style>
     :root {
       --bg: #FAFAF8;
@@ -33,17 +33,9 @@
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      margin-bottom: 16px;
+      margin-bottom: 48px;
     }
     .statement small { display: block; font-size: 13px; color: var(--sub); margin-top: 12px; letter-spacing: 0; }
-    .concept {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 24px 28px;
-      margin-bottom: 48px;
-      font-size: 14px;
-    }
     section { margin-bottom: 64px; }
     h2 { font-size: 18px; margin-bottom: 4px; }
     .badge {
@@ -76,6 +68,9 @@
     .icon.s48 { width: 48px; height: 48px; }
     .icon.s32 { width: 32px; height: 32px; }
     svg { display: block; width: 100%; height: 100%; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+    th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--sub); font-weight: normal; white-space: nowrap; }
     ul { padding-left: 1.4em; font-size: 14px; }
   </style>
 </head>
@@ -85,11 +80,13 @@
   <defs>
     <symbol id="ic-light" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <g transform="rotate(45 512 512)">
-        <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z"
-              fill="#2B2933" stroke="#2B2933" stroke-width="18" stroke-linejoin="round"/>
+      <path d="M 235 758 C 300 690, 355 622, 400 560 C 430 515, 425 455, 370 450 C 300 445, 255 515, 268 585 C 280 650, 345 690, 420 655 C 520 605, 650 470, 740 380"
+            fill="none" stroke="#2B2933" stroke-width="52" stroke-linecap="round"/>
+      <path d="M 758 398 L 722 362 L 812 308 Z" fill="#2B2933" stroke="#2B2933" stroke-width="10" stroke-linejoin="round"/>
+      <g transform="rotate(45 858 182)">
+        <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
+              fill="#B3A1D6" stroke="#B3A1D6" stroke-width="22" stroke-linejoin="round"/>
       </g>
-      <circle cx="838" cy="186" r="30" fill="#B3A1D6"/>
     </symbol>
     <symbol id="ic-night" viewBox="0 0 1024 1024">
       <radialGradient id="sky-p" cx="0.82" cy="0.18" r="1.15">
@@ -98,48 +95,42 @@
         <stop offset="1" stop-color="#201D28"/>
       </radialGradient>
       <rect width="1024" height="1024" fill="url(#sky-p)"/>
-      <circle cx="270" cy="280" r="5" fill="#F7F2E8" opacity="0.5"/>
-      <circle cx="640" cy="800" r="4" fill="#F7F2E8" opacity="0.35"/>
-      <g transform="rotate(45 512 512)">
-        <path d="M 512 150 C 486 300, 466 480, 466 640 A 48 48 0 1 0 560 640 C 560 480, 538 300, 512 150 Z"
-              fill="#F7F2E8" stroke="#F7F2E8" stroke-width="14" stroke-linejoin="round"/>
+      <circle cx="250" cy="300" r="5" fill="#F7F2E8" opacity="0.5"/>
+      <circle cx="620" cy="820" r="4" fill="#F7F2E8" opacity="0.35"/>
+      <path d="M 235 758 C 300 690, 355 622, 400 560 C 430 515, 425 455, 370 450 C 300 445, 255 515, 268 585 C 280 650, 345 690, 420 655 C 520 605, 650 470, 740 380"
+            fill="none" stroke="#F7F2E8" stroke-width="46" stroke-linecap="round"/>
+      <path d="M 754 394 L 726 366 L 808 312 Z" fill="#F7F2E8" stroke="#F7F2E8" stroke-width="10" stroke-linejoin="round"/>
+      <circle cx="858" cy="182" r="86" fill="#C9B6EA" opacity="0.2"/>
+      <g transform="rotate(45 858 182)">
+        <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
+              fill="#DCCBF2" stroke="#DCCBF2" stroke-width="22" stroke-linejoin="round"/>
       </g>
-      <circle cx="838" cy="186" r="72" fill="#C9B6EA" opacity="0.22"/>
-      <circle cx="838" cy="186" r="26" fill="#E3D6F5"/>
     </symbol>
     <symbol id="ic-field" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#B3A1D6"/>
-      <g transform="rotate(45 512 512)">
-        <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z"
-              fill="#F7F2E8" stroke="#F7F2E8" stroke-width="18" stroke-linejoin="round"/>
+      <path d="M 235 758 C 300 690, 355 622, 400 560 C 430 515, 425 455, 370 450 C 300 445, 255 515, 268 585 C 280 650, 345 690, 420 655 C 520 605, 650 470, 740 380"
+            fill="none" stroke="#F7F2E8" stroke-width="52" stroke-linecap="round"/>
+      <path d="M 758 398 L 722 362 L 812 308 Z" fill="#F7F2E8" stroke="#F7F2E8" stroke-width="10" stroke-linejoin="round"/>
+      <g transform="rotate(45 858 182)">
+        <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
+              fill="#F7F2E8" stroke="#F7F2E8" stroke-width="22" stroke-linejoin="round"/>
       </g>
-      <circle cx="838" cy="186" r="30" fill="#F7F2E8"/>
     </symbol>
   </defs>
 </svg>
 
 <div class="wrap">
-  <h1>exSpace ロゴ v8「しずくの針」</h1>
-  <p class="lead">コンセプトは前回合意の「あなたの『次』を指す針」のまま、表現をゼロから作り直した版です。</p>
+  <h1>exSpace ロゴ v9「ひと筆の ex」</h1>
+  <p class="lead">v8 の構図(対角に流れる針+先の珠)を保ったまま、「ex」を造形そのものに組み込んだ版です。</p>
 
   <div class="statement">
-    あなたの「次」を指す針。
-    <small>しずくの形をした針が、画面の対角を大きく流れて、その先の珠(=あなたの次に行きたい場所)を指す。</small>
-  </div>
-
-  <div class="concept">
-    <strong>今までの案から捨てたもの</strong>
-    <ul>
-      <li>文字盤のリング、中央の軸、方位ドット、目盛り——「コンパスの説明」を全部捨てて、「指す」という行為だけを残しました。</li>
-      <li>中央にお行儀よく収まる構図——針を対角いっぱいに大きく流し、マークが画面を横切る構図に変えました。</li>
-      <li>要素は針と珠の2つだけ。針はしずく(=繊細さ・雨上がりの一滴)の形で、鋭角はどこにもありません。</li>
-    </ul>
-    <p style="margin-top:8px" class="note">正直な注記:文字盤を捨てた分、「方位磁針の絵」としての説明性は下がっています。そのぶん「指す」動きと珠の関係で意味を伝える設計です。もし方位磁針の記号性をもう少し戻したければ、針を両端型にする・小さな弧を添える等の中間solutionもあります。</p>
+    ひと筆の e が、針になって、x を指す。
+    <small>筆記体の e を書いた筆致がそのまま伸びて針先になり、きらめく x(=あなたの「次」のしるし)へ向かう。</small>
   </div>
 
   <section>
     <h2>ライト<span class="badge">基準案</span></h2>
-    <p class="note">クリーム地にチャコールの針、ラベンダーの珠。ブランドカラーは継承しつつ構図で刷新。</p>
+    <p class="note">クリーム地×チャコールの筆致×ラベンダーの x。</p>
     <div class="row">
       <div class="cell"><div class="icon s280"><svg><use href="#ic-light"/></svg></div><span>280px</span></div>
       <div class="cell"><div class="icon s96"><svg><use href="#ic-light"/></svg></div><span>96px</span></div>
@@ -150,7 +141,7 @@
 
   <section>
     <h2>ナイト</h2>
-    <p class="note">夜のグラデーションの中、細い針が光る珠へ向かう。儚さ・詩情を最優先した塗り。「まだ見ぬ場所が光っている」という物語がいちばん濃く出ます。</p>
+    <p class="note">夜空の中、筆致が光る x へ伸びる。儚さ・詩情はこちらが最も濃い。</p>
     <div class="row dark">
       <div class="cell"><div class="icon s280"><svg><use href="#ic-night"/></svg></div><span>280px</span></div>
       <div class="cell"><div class="icon s96"><svg><use href="#ic-night"/></svg></div><span>96px</span></div>
@@ -161,7 +152,7 @@
 
   <section>
     <h2>フィールド</h2>
-    <p class="note">ラベンダーを面で使う大胆版。クリーム1色の針と珠だけ。ホーム画面での存在感はこれが最強です。</p>
+    <p class="note">ラベンダーの面にクリーム1色。ホーム画面での存在感重視。</p>
     <div class="row">
       <div class="cell"><div class="icon s280"><svg><use href="#ic-field"/></svg></div><span>280px</span></div>
       <div class="cell"><div class="icon s96"><svg><use href="#ic-field"/></svg></div><span>96px</span></div>
@@ -171,14 +162,25 @@
   </section>
 
   <section>
+    <h2>意味と形の対応</h2>
+    <table>
+      <tr><th>形</th><th>意味</th></tr>
+      <tr><td>筆記体の e</td><td>いまの自分・日常。手書きの筆致は「あなた個人」の temperature。exSpace の頭文字</td></tr>
+      <tr><td>伸びていく筆致と針先</td><td>「あなたの『次』を指す針」(合意済みコンセプト)。expand×Space=既知の外へ伸びていく線でもある</td></tr>
+      <tr><td>きらめく x</td><td>次の場所のしるし(宝の地図の "x marks the spot")。example×Space の「例えばここどう?」の提案であり、experience×Space の輝く未知でもある</td></tr>
+      <tr><td>全体</td><td>e → x とそのまま読める。要素は筆致と x の2つ、鋭角は針先のみ</td></tr>
+    </table>
+  </section>
+
+  <section>
     <h2>ファイル構成</h2>
     <ul>
       <li><code>expe-icon.svg</code> — ライト(基準案・1024px)</li>
       <li><code>expe-icon-night.svg</code> — ナイト</li>
       <li><code>expe-icon-field.svg</code> — フィールド</li>
-      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(針と珠のみ)</li>
+      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(1色で成立)</li>
     </ul>
-    <p class="note" style="margin-top:12px">構図が大ぶりなので小サイズ用の別バージョンは不要になりました(32pxまで同一データで成立)。</p>
+    <p class="note" style="margin-top:12px">32px まで同一データで成立(実機レンダリングで確認済み)。</p>
   </section>
 </div>
 </body>

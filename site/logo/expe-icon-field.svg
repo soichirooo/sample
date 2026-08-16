@@ -1,10 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v8「しずくの針」フィールド
-       ラベンダーを面で使う大胆版。クリーム1色の針と珠のみ -->
+  <!-- v9「ひと筆の ex」フィールド:ラベンダー面にクリーム1色 -->
   <rect width="1024" height="1024" rx="229" fill="#B3A1D6"/>
-  <g transform="rotate(45 512 512)">
-    <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z"
-          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="18" stroke-linejoin="round"/>
+  <path d="M 235 758
+           C 300 690, 355 622, 400 560
+           C 430 515, 425 455, 370 450
+           C 300 445, 255 515, 268 585
+           C 280 650, 345 690, 420 655
+           C 520 605, 650 470, 740 380"
+        fill="none" stroke="#F7F2E8" stroke-width="52" stroke-linecap="round"/>
+  <path d="M 758 398 L 722 362 L 812 308 Z"
+        fill="#F7F2E8" stroke="#F7F2E8" stroke-width="10" stroke-linejoin="round"/>
+  <g transform="rotate(45 858 182)">
+    <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
+          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="22" stroke-linejoin="round"/>
   </g>
-  <circle cx="838" cy="186" r="30" fill="#F7F2E8"/>
 </svg>
