@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- v4 本命「e × コンパスローズ」
+       太く丸い小文字 e と、北東に浮かぶコンパスローズ(4点星・角丸)で ex を表現。
+       尖りのない丸端ストロークのみで構成 -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <!-- e:丸端の太いストローク。開口部は右下 -->
+  <path d="M 566 816 A 270 270 0 1 1 697 685"
+        fill="none" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
+  <line x1="186" y1="571" x2="718" y2="571" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
+  <!-- x:コンパスローズ(角を丸めた4点星)。北東=進む方向に配置 -->
+  <path d="M 757 148 Q 777 246 875 266 Q 777 286 757 384 Q 737 286 659 266 Q 737 246 757 148 Z"
+        fill="#B3A1D6" stroke="#B3A1D6" stroke-width="34" stroke-linejoin="round"/>
+</svg>

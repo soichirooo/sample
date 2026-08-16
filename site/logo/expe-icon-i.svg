@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- v4 別案「ソフトダイヤル」
+       文字盤リング+丸端の x(振れた針の名残り)+北東のジュエルドット。
+       Instagram と同じ3要素構造 -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <circle cx="512" cy="512" r="330" fill="none" stroke="#2B2933" stroke-width="60"/>
+  <!-- x:丸端ストロークの交差(ラベンダー=残像、チャコール=現在) -->
+  <line x1="392" y1="392" x2="632" y2="632" stroke="#B3A1D6" stroke-width="88" stroke-linecap="round"/>
+  <line x1="392" y1="632" x2="632" y2="392" stroke="#2B2933" stroke-width="88" stroke-linecap="round"/>
+  <!-- 北東のジュエル(方位の輝き) -->
+  <circle cx="694" cy="330" r="28" fill="#B3A1D6"/>
+</svg>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exSpace ロゴ刷新案 v3</title>
+  <title>exSpace ロゴ刷新案 v4</title>
   <style>
     :root {
       --bg: #FAFAF8;
@@ -56,7 +56,6 @@
       border-radius: 20px;
       padding: 32px;
     }
-    .row.dark { background: #1C1C1F; border-color: #2A2A2E; }
     .cell { text-align: center; }
     .cell span { display: block; font-size: 11px; color: var(--sub); margin-top: 10px; }
     .icon { border-radius: 22.37%; display: block; overflow: hidden; }
@@ -70,118 +69,69 @@
 </head>
 <body>
 
-<!-- アイコン定義(1回だけ描画し、以降は use で参照) -->
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <symbol id="ic-g" viewBox="0 0 1024 1024">
+    <symbol id="ic-h" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <circle cx="512" cy="512" r="340" fill="none" stroke="#2B2933" stroke-width="24"/>
-      <circle cx="512" cy="117" r="13" fill="#B3A1D6"/>
-      <circle cx="907" cy="512" r="9" fill="#2B2933"/>
-      <circle cx="512" cy="907" r="9" fill="#2B2933"/>
-      <circle cx="117" cy="512" r="9" fill="#2B2933"/>
-      <path d="M 390 238 A 300 300 0 0 1 634 238" fill="none"
-            stroke="#B3A1D6" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 44"/>
-      <g transform="rotate(-32 512 512)">
-        <polygon points="512,222 552,512 472,512" fill="#B3A1D6"/>
-        <polygon points="472,512 552,512 512,802" fill="#B3A1D6" opacity="0.8"/>
-      </g>
-      <g transform="rotate(32 512 512)">
-        <polygon points="512,222 552,512 472,512" fill="#2B2933"/>
-        <polygon points="472,512 552,512 512,802" fill="#2B2933" opacity="0.85"/>
-      </g>
-      <circle cx="512" cy="512" r="22" fill="#F7F2E8" stroke="#2B2933" stroke-width="12"/>
+      <path d="M 566 816 A 270 270 0 1 1 697 685"
+            fill="none" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
+      <line x1="186" y1="571" x2="718" y2="571" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
+      <path d="M 757 148 Q 777 246 875 266 Q 777 286 757 384 Q 737 286 659 266 Q 737 246 757 148 Z"
+            fill="#B3A1D6" stroke="#B3A1D6" stroke-width="34" stroke-linejoin="round"/>
     </symbol>
-    <symbol id="ic-g-dark" viewBox="0 0 1024 1024">
-      <rect width="1024" height="1024" fill="#2B2933"/>
-      <circle cx="512" cy="512" r="340" fill="none" stroke="#F7F2E8" stroke-width="24"/>
-      <circle cx="512" cy="117" r="13" fill="#B3A1D6"/>
-      <circle cx="907" cy="512" r="9" fill="#F7F2E8"/>
-      <circle cx="512" cy="907" r="9" fill="#F7F2E8"/>
-      <circle cx="117" cy="512" r="9" fill="#F7F2E8"/>
-      <path d="M 390 238 A 300 300 0 0 1 634 238" fill="none"
-            stroke="#B3A1D6" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 44"/>
-      <g transform="rotate(-32 512 512)">
-        <polygon points="512,222 552,512 472,512" fill="#B3A1D6"/>
-        <polygon points="472,512 552,512 512,802" fill="#B3A1D6" opacity="0.8"/>
-      </g>
-      <g transform="rotate(32 512 512)">
-        <polygon points="512,222 552,512 472,512" fill="#F7F2E8"/>
-        <polygon points="472,512 552,512 512,802" fill="#F7F2E8" opacity="0.85"/>
-      </g>
-      <circle cx="512" cy="512" r="22" fill="#2B2933" stroke="#F7F2E8" stroke-width="12"/>
-    </symbol>
-    <symbol id="ic-g-min" viewBox="0 0 1024 1024">
+    <symbol id="ic-i" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <circle cx="512" cy="512" r="340" fill="none" stroke="#2B2933" stroke-width="30"/>
-      <g transform="rotate(-32 512 512)">
-        <polygon points="512,222 558,512 466,512" fill="#B3A1D6"/>
-        <polygon points="466,512 558,512 512,802" fill="#B3A1D6"/>
-      </g>
-      <g transform="rotate(32 512 512)">
-        <polygon points="512,222 558,512 466,512" fill="#2B2933"/>
-        <polygon points="466,512 558,512 512,802" fill="#2B2933"/>
-      </g>
-      <circle cx="512" cy="512" r="24" fill="#F7F2E8" stroke="#2B2933" stroke-width="13"/>
+      <circle cx="512" cy="512" r="330" fill="none" stroke="#2B2933" stroke-width="60"/>
+      <line x1="392" y1="392" x2="632" y2="632" stroke="#B3A1D6" stroke-width="88" stroke-linecap="round"/>
+      <line x1="392" y1="632" x2="632" y2="392" stroke="#2B2933" stroke-width="88" stroke-linecap="round"/>
+      <circle cx="694" cy="330" r="28" fill="#B3A1D6"/>
     </symbol>
   </defs>
 </svg>
 
 <div class="wrap">
-  <h1>exSpace アプリアイコン刷新案 v3「スウィング・コンパス」</h1>
-  <p class="lead">振れる針の残像が x を描く方位磁針。繊細さと小サイズでの視認性の両立を狙った1案+展開2種です。</p>
+  <h1>exSpace アプリアイコン刷新案 v4</h1>
+  <p class="lead">尖りを全て排除し、丸端のストロークだけで構成。Instagram と同じ「少ない要素+太い丸い線」の文法で、ex とコンパスを表現した2案です。</p>
 
   <div class="concept">
-    <strong>表現の仕組み</strong>
+    <strong>v4 での変更点</strong>
     <ul>
-      <li><strong>x =「振れている針」</strong>:チャコールの針が現在の向き、ラベンダーの針がひとつ前の残像。2本が軸で交差して自然に x が浮かびます。文字を図形化したのではなく、コンパスの動きが結果として x になる、という順序にしました。</li>
-      <li><strong>方位磁針であることの明示</strong>:細い文字盤リング、軸のピボット、N/E/S/W の方位ドット(北だけラベンダー)、針先の振れ軌跡を示すドットの弧。</li>
-      <li><strong>繊細さと視認性の両立</strong>:リング・ドット・弧は細く上品に、いっぽう針だけは太めに取り、48px では「リング+x」の2要素だけが残って読めるように重みを配分しています。</li>
+      <li><strong>鋭角ゼロ</strong>:針の鋭い三角をやめ、すべて丸端(round cap)のストロークと角丸の星に置き換えました。柔らかく女性的な印象を保ちます。</li>
+      <li><strong>Instagram 構造</strong>:「大きな主図形+小さなアクセント」の2〜3要素まで削減。48px・32px でも形がそのまま残ります。</li>
+      <li><strong>ex の表現</strong>:e は太い丸ストロークの小文字、x はコンパスローズ(4点星)または丸端のクロスとして担わせています。</li>
     </ul>
   </div>
 
   <section>
-    <h2>本命<span class="badge">推奨</span></h2>
-    <p class="note">クリーム地。現行ロゴの配色(クリーム × チャコール × ラベンダー)をそのまま継承しています。</p>
+    <h2>案H|e × コンパスローズ<span class="badge">推奨</span></h2>
+    <p class="note">主役は太く丸い小文字「e」。その北東(=これから進む方角)に、角を丸めたコンパスローズの4点星を「x」として浮かべました。Instagram のフラッシュドットと同じ位置関係で、e と星の2要素だけ。星が方位磁針の記号(コンパスローズ)なので、柔らかいままモチーフが伝わります。</p>
     <div class="row">
-      <div class="cell"><div class="icon s200"><svg><use href="#ic-g"/></svg></div><span>200px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-g"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-g"/></svg></div><span>48px(ホーム画面)</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-g"/></svg></div><span>32px(設定・通知)</span></div>
+      <div class="cell"><div class="icon s200"><svg><use href="#ic-h"/></svg></div><span>200px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-h"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-h"/></svg></div><span>48px(ホーム画面)</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-h"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
-    <h2>ダーク展開</h2>
-    <p class="note">同じ構成の反転版。ダークモードのホーム画面や、より強い存在感が欲しい場合に。ラベンダーの残像はそのまま残し、上品さを保っています。</p>
-    <div class="row dark">
-      <div class="cell"><div class="icon s200"><svg><use href="#ic-g-dark"/></svg></div><span>200px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-g-dark"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-g-dark"/></svg></div><span>48px</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-g-dark"/></svg></div><span>32px</span></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>ミニマル展開</h2>
-    <p class="note">方位ドットと軌跡を省き、リングと2本の針だけにした最小構成。ファビコンや超小型表示ではこちらへの出し分けを推奨します。</p>
+    <h2>案I|ソフトダイヤル</h2>
+    <p class="note">文字盤リングの中で、丸端ストロークの「x」が交差する案。ラベンダーが振れた針の残像、チャコールが現在の針という v3 の物語を、尖りのない形に翻訳したものです。北東のジュエルドットが方位の輝き。リング・x・ドットの3要素で、コンパスの読みはこちらが最も強いです。</p>
     <div class="row">
-      <div class="cell"><div class="icon s200"><svg><use href="#ic-g-min"/></svg></div><span>200px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-g-min"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-g-min"/></svg></div><span>48px</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-g-min"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s200"><svg><use href="#ic-i"/></svg></div><span>200px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-i"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-i"/></svg></div><span>48px(ホーム画面)</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-i"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
-    <h2>ファイル構成</h2>
+    <h2>使い分けの目安</h2>
     <ul>
-      <li><code>expe-icon-g.svg</code> — 本命(アプリアイコン用マスター 1024px)</li>
-      <li><code>expe-icon-g-dark.svg</code> — ダーク展開</li>
-      <li><code>expe-icon-g-minimal.svg</code> — ミニマル展開(ファビコン用)</li>
-      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(残像は透過で表現、1色印刷でも成立)</li>
+      <li><strong>案H</strong>:ブランド名(ex)の想起を優先。アイコン単体で「e」が読めるのはこちらだけ。</li>
+      <li><strong>案I</strong>:コンパスの読みを優先。x も明瞭で、最小サイズでの骨格はこちらが最強。</li>
+      <li>単色マーク <code>expe-mark.svg</code> は案Hベース(背景透過・1色)で更新済み。</li>
     </ul>
-    <p class="note" style="margin-top:12px">過去の提案(v1・v2)のファイルは整理済み。必要になれば git 履歴から復元できます。</p>
+    <p class="note" style="margin-top:12px">過去案(v1〜v3)のファイルは整理済み。git 履歴から復元できます。</p>
   </section>
 </div>
 </body>

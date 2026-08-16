@@ -1,13 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- 単色ロゴマーク(v3/背景透過)。残像の針は透過で表現し、1色でも「振れ」が伝わる -->
-  <circle cx="512" cy="512" r="400" fill="none" stroke="#2B2933" stroke-width="30"/>
-  <g transform="rotate(-32 512 512)">
-    <polygon points="512,162 558,512 466,512" fill="#2B2933" opacity="0.4"/>
-    <polygon points="466,512 558,512 512,862" fill="#2B2933" opacity="0.4"/>
-  </g>
-  <g transform="rotate(32 512 512)">
-    <polygon points="512,162 558,512 466,512" fill="#2B2933"/>
-    <polygon points="466,512 558,512 512,862" fill="#2B2933"/>
-  </g>
-  <circle cx="512" cy="512" r="26" fill="#FFFFFF" stroke="#2B2933" stroke-width="14"/>
+  <!-- 単色ロゴマーク(v4「e × コンパスローズ」/背景透過)。fill・stroke の色を差し替えて使用 -->
+  <path d="M 566 816 A 270 270 0 1 1 697 685"
+        fill="none" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
+  <line x1="186" y1="571" x2="718" y2="571" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
+  <path d="M 757 148 Q 777 246 875 266 Q 777 286 757 384 Q 737 286 659 266 Q 737 246 757 148 Z"
+        fill="#2B2933" stroke="#2B2933" stroke-width="34" stroke-linejoin="round"/>
 </svg>
