@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- v9「ひと筆の ex」フィールド:ラベンダー面にクリーム1色 -->
+  <!-- v10「コンパスと x」フィールド -->
   <rect width="1024" height="1024" rx="229" fill="#B3A1D6"/>
-  <path d="M 235 758
-           C 300 690, 355 622, 400 560
-           C 430 515, 425 455, 370 450
-           C 300 445, 255 515, 268 585
-           C 280 650, 345 690, 420 655
-           C 520 605, 650 470, 740 380"
-        fill="none" stroke="#F7F2E8" stroke-width="52" stroke-linecap="round"/>
-  <path d="M 758 398 L 722 362 L 812 308 Z"
-        fill="#F7F2E8" stroke="#F7F2E8" stroke-width="10" stroke-linejoin="round"/>
-  <g transform="rotate(45 858 182)">
-    <path d="M 858 114 Q 871 170 926 182 Q 871 194 858 250 Q 845 194 790 182 Q 845 170 858 114 Z"
-          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="22" stroke-linejoin="round"/>
+  <path d="M 745 395 A 300 300 0 1 1 635 285"
+        fill="none" stroke="#F7F2E8" stroke-width="20" stroke-linecap="round"/>
+  <g transform="rotate(45 485 545)">
+    <path d="M 485 545 C 458 478, 454 388, 470 308 A 15 15 0 0 1 500 308 C 516 388, 512 478, 485 545 Z"
+          fill="#2B2933"/>
+    <path d="M 485 545 C 458 612, 454 702, 470 782 A 15 15 0 0 0 500 782 C 516 702, 512 612, 485 545 Z"
+          fill="#F7F2E8"/>
+  </g>
+  <circle cx="485" cy="545" r="13" fill="#B3A1D6" stroke="#F7F2E8" stroke-width="9"/>
+  <g transform="rotate(45 860 180)">
+    <path d="M 860 118 Q 871 169 922 180 Q 871 191 860 242 Q 849 191 798 180 Q 849 169 860 118 Z"
+          fill="#F7F2E8" stroke="#F7F2E8" stroke-width="20" stroke-linejoin="round"/>
   </g>
 </svg>
