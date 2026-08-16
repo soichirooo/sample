@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exSpace ロゴ v7「じぶんの方角」</title>
+  <title>exSpace ロゴ v8「しずくの針」</title>
   <style>
     :root {
       --bg: #FAFAF8;
@@ -29,15 +29,33 @@
       font-size: 22px;
       letter-spacing: 0.06em;
       text-align: center;
-      padding: 40px 24px;
+      padding: 36px 24px;
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
       margin-bottom: 16px;
     }
     .statement small { display: block; font-size: 13px; color: var(--sub); margin-top: 12px; letter-spacing: 0; }
+    .concept {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      font-size: 14px;
+    }
     section { margin-bottom: 64px; }
     h2 { font-size: 18px; margin-bottom: 4px; }
+    .badge {
+      display: inline-block;
+      background: var(--ink);
+      color: #fff;
+      font-size: 11px;
+      border-radius: 999px;
+      padding: 2px 10px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
     .note { color: var(--sub); font-size: 13px; margin-bottom: 20px; }
     .row {
       display: flex;
@@ -49,6 +67,7 @@
       border-radius: 20px;
       padding: 32px;
     }
+    .row.dark { background: #1C1C1F; border-color: #2A2A2E; }
     .cell { text-align: center; }
     .cell span { display: block; font-size: 11px; color: var(--sub); margin-top: 10px; }
     .icon { border-radius: 22.37%; display: block; overflow: hidden; }
@@ -57,9 +76,6 @@
     .icon.s48 { width: 48px; height: 48px; }
     .icon.s32 { width: 32px; height: 32px; }
     svg { display: block; width: 100%; height: 100%; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
-    th, td { text-align: left; padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
-    th { color: var(--sub); font-weight: normal; white-space: nowrap; }
     ul { padding-left: 1.4em; font-size: 14px; }
   </style>
 </head>
@@ -67,85 +83,102 @@
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <symbol id="ic-main" viewBox="0 0 1024 1024">
+    <symbol id="ic-light" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <path d="M 795 362 A 320 320 0 1 1 691 247"
-            fill="none" stroke="#2B2933" stroke-width="16" stroke-linecap="round"/>
-      <circle cx="512" cy="192" r="8" fill="#2B2933" opacity="0.7"/>
-      <circle cx="750" cy="298" r="26" fill="#B3A1D6"/>
-      <g transform="rotate(48 512 512)">
-        <path d="M 512 512 C 489 440, 486 345, 500 276 A 12 12 0 0 1 524 276 C 538 345, 535 440, 512 512 Z"
-              fill="#2B2933"/>
-        <path d="M 512 512 C 500 552, 498 592, 505 620 A 9 9 0 0 0 519 620 C 526 592, 524 552, 512 512 Z"
-              fill="#B3A1D6"/>
+      <g transform="rotate(45 512 512)">
+        <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z"
+              fill="#2B2933" stroke="#2B2933" stroke-width="18" stroke-linejoin="round"/>
       </g>
-      <circle cx="512" cy="512" r="10" fill="#F7F2E8" stroke="#2B2933" stroke-width="7"/>
+      <circle cx="838" cy="186" r="30" fill="#B3A1D6"/>
     </symbol>
-    <symbol id="ic-small" viewBox="0 0 1024 1024">
-      <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <path d="M 795 362 A 320 320 0 1 1 691 247"
-            fill="none" stroke="#2B2933" stroke-width="26" stroke-linecap="round"/>
-      <circle cx="512" cy="192" r="11" fill="#2B2933" opacity="0.7"/>
-      <circle cx="750" cy="298" r="32" fill="#B3A1D6"/>
-      <g transform="rotate(48 512 512)">
-        <path d="M 512 512 C 481 440, 477 345, 496 272 A 16 16 0 0 1 528 272 C 547 345, 543 440, 512 512 Z"
-              fill="#2B2933"/>
-        <path d="M 512 512 C 497 552, 494 592, 502 622 A 11 11 0 0 0 522 622 C 530 592, 527 552, 512 512 Z"
-              fill="#B3A1D6"/>
+    <symbol id="ic-night" viewBox="0 0 1024 1024">
+      <radialGradient id="sky-p" cx="0.82" cy="0.18" r="1.15">
+        <stop offset="0" stop-color="#4E4168"/>
+        <stop offset="0.55" stop-color="#2E2940"/>
+        <stop offset="1" stop-color="#201D28"/>
+      </radialGradient>
+      <rect width="1024" height="1024" fill="url(#sky-p)"/>
+      <circle cx="270" cy="280" r="5" fill="#F7F2E8" opacity="0.5"/>
+      <circle cx="640" cy="800" r="4" fill="#F7F2E8" opacity="0.35"/>
+      <g transform="rotate(45 512 512)">
+        <path d="M 512 150 C 486 300, 466 480, 466 640 A 48 48 0 1 0 560 640 C 560 480, 538 300, 512 150 Z"
+              fill="#F7F2E8" stroke="#F7F2E8" stroke-width="14" stroke-linejoin="round"/>
       </g>
-      <circle cx="512" cy="512" r="13" fill="#F7F2E8" stroke="#2B2933" stroke-width="9"/>
+      <circle cx="838" cy="186" r="72" fill="#C9B6EA" opacity="0.22"/>
+      <circle cx="838" cy="186" r="26" fill="#E3D6F5"/>
+    </symbol>
+    <symbol id="ic-field" viewBox="0 0 1024 1024">
+      <rect width="1024" height="1024" fill="#B3A1D6"/>
+      <g transform="rotate(45 512 512)">
+        <path d="M 512 150 C 478 300, 452 480, 452 644 A 62 62 0 1 0 572 644 C 572 480, 546 300, 512 150 Z"
+              fill="#F7F2E8" stroke="#F7F2E8" stroke-width="18" stroke-linejoin="round"/>
+      </g>
+      <circle cx="838" cy="186" r="30" fill="#F7F2E8"/>
     </symbol>
   </defs>
 </svg>
 
 <div class="wrap">
-  <h1>exSpace ロゴ v7「じぶんの方角」</h1>
-  <p class="lead">サービスの定義(あなたの代わりに「次」を決めてくれる/世界で最もその人の「次に行きたい」を理解している)から逆算した、コンセプト先行の1案です。</p>
+  <h1>exSpace ロゴ v8「しずくの針」</h1>
+  <p class="lead">コンセプトは前回合意の「あなたの『次』を指す針」のまま、表現をゼロから作り直した版です。</p>
 
   <div class="statement">
-    北ではなく、あなたの「次」を指す針。
-    <small>コンパスの針は普通、誰にとっても同じ北を指す。exSpace の針だけは、その人の「次に行きたい」を指す。</small>
+    あなたの「次」を指す針。
+    <small>しずくの形をした針が、画面の対角を大きく流れて、その先の珠(=あなたの次に行きたい場所)を指す。</small>
   </div>
 
-  <section style="margin-top:48px">
-    <h2>本命</h2>
+  <div class="concept">
+    <strong>今までの案から捨てたもの</strong>
+    <ul>
+      <li>文字盤のリング、中央の軸、方位ドット、目盛り——「コンパスの説明」を全部捨てて、「指す」という行為だけを残しました。</li>
+      <li>中央にお行儀よく収まる構図——針を対角いっぱいに大きく流し、マークが画面を横切る構図に変えました。</li>
+      <li>要素は針と珠の2つだけ。針はしずく(=繊細さ・雨上がりの一滴)の形で、鋭角はどこにもありません。</li>
+    </ul>
+    <p style="margin-top:8px" class="note">正直な注記:文字盤を捨てた分、「方位磁針の絵」としての説明性は下がっています。そのぶん「指す」動きと珠の関係で意味を伝える設計です。もし方位磁針の記号性をもう少し戻したければ、針を両端型にする・小さな弧を添える等の中間solutionもあります。</p>
+  </div>
+
+  <section>
+    <h2>ライト<span class="badge">基準案</span></h2>
+    <p class="note">クリーム地にチャコールの針、ラベンダーの珠。ブランドカラーは継承しつつ構図で刷新。</p>
     <div class="row">
-      <div class="cell"><div class="icon s280"><svg><use href="#ic-main"/></svg></div><span>280px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-main"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-main"/></svg></div><span>48px(ホーム画面)</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-main"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s280"><svg><use href="#ic-light"/></svg></div><span>280px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-light"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-light"/></svg></div><span>48px(ホーム画面)</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-light"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
-    <h2>意味と形の対応</h2>
-    <table>
-      <tr><th>形</th><th>意味</th></tr>
-      <tr><td>針が北の点を指していない</td><td>核の意味「自分だけの方角を見つける」。頂点の小さな点=誰にとっても同じ「正解」の北。針はそれを静かに無視して、その人の方角を指す</td></tr>
-      <tr><td>ラベンダーの珠</td><td>アプリが差し出す「例えばこんな空間どうですか?」という提案の一点(example×Space)。針はこの珠をまっすぐ指す</td></tr>
-      <tr><td>リングの開口</td><td>既知の円の外へ広がっていく空間(expand×Space)。珠は開口部=円の縁に浮かび、その先は未知(experience×Space)</td></tr>
-      <tr><td>しずく型の針・細いリング</td><td>尖りのない繊細な線。儚さと女性性はここで担保</td></tr>
-      <tr><td>要素数</td><td>リング・北の点・珠・針・軸の5つ、色は2色。可読性は針と珠の2点に集中</td></tr>
-    </table>
+    <h2>ナイト</h2>
+    <p class="note">夜のグラデーションの中、細い針が光る珠へ向かう。儚さ・詩情を最優先した塗り。「まだ見ぬ場所が光っている」という物語がいちばん濃く出ます。</p>
+    <div class="row dark">
+      <div class="cell"><div class="icon s280"><svg><use href="#ic-night"/></svg></div><span>280px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-night"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-night"/></svg></div><span>48px</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-night"/></svg></div><span>32px</span></div>
+    </div>
   </section>
 
   <section>
-    <h2>小サイズ用(64px以下での出し分け)</h2>
-    <p class="note">構成は同一のまま、線・針・珠を太らせた強度優先版。ファビコン・通知アイコン用。</p>
+    <h2>フィールド</h2>
+    <p class="note">ラベンダーを面で使う大胆版。クリーム1色の針と珠だけ。ホーム画面での存在感はこれが最強です。</p>
     <div class="row">
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-small"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-small"/></svg></div><span>48px</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-small"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s280"><svg><use href="#ic-field"/></svg></div><span>280px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-field"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-field"/></svg></div><span>48px</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-field"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
     <h2>ファイル構成</h2>
     <ul>
-      <li><code>expe-icon.svg</code> — アプリアイコン用マスター(1024px)</li>
-      <li><code>expe-icon-small.svg</code> — 小サイズ用(64px以下)</li>
-      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(珠は輪郭で表現、1色印刷でも成立)</li>
+      <li><code>expe-icon.svg</code> — ライト(基準案・1024px)</li>
+      <li><code>expe-icon-night.svg</code> — ナイト</li>
+      <li><code>expe-icon-field.svg</code> — フィールド</li>
+      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(針と珠のみ)</li>
     </ul>
+    <p class="note" style="margin-top:12px">構図が大ぶりなので小サイズ用の別バージョンは不要になりました(32pxまで同一データで成立)。</p>
   </section>
 </div>
 </body>
