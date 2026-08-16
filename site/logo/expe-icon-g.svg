@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- v3 本命「スウィング・コンパス」
+       振れる針の残像(ラベンダー)と現在の針(チャコール)が交差して x を描く。
+       細い文字盤リング+方位ドット+振れ軌跡のドット弧で方位磁針であることを明示 -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <!-- 文字盤リング -->
+  <circle cx="512" cy="512" r="340" fill="none" stroke="#2B2933" stroke-width="24"/>
+  <!-- 方位ドット(北のみラベンダー) -->
+  <circle cx="512" cy="117" r="13" fill="#B3A1D6"/>
+  <circle cx="907" cy="512" r="9" fill="#2B2933"/>
+  <circle cx="512" cy="907" r="9" fill="#2B2933"/>
+  <circle cx="117" cy="512" r="9" fill="#2B2933"/>
+  <!-- 振れの軌跡(ドット弧) -->
+  <path d="M 390 238 A 300 300 0 0 1 634 238" fill="none"
+        stroke="#B3A1D6" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 44"/>
+  <!-- 残像の針(振れた位置・ラベンダー) -->
+  <g transform="rotate(-32 512 512)">
+    <polygon points="512,222 552,512 472,512" fill="#B3A1D6"/>
+    <polygon points="472,512 552,512 512,802" fill="#B3A1D6" opacity="0.8"/>
+  </g>
+  <!-- 現在の針(チャコール) -->
+  <g transform="rotate(32 512 512)">
+    <polygon points="512,222 552,512 472,512" fill="#2B2933"/>
+    <polygon points="472,512 552,512 512,802" fill="#2B2933" opacity="0.85"/>
+  </g>
+  <!-- 軸 -->
+  <circle cx="512" cy="512" r="22" fill="#F7F2E8" stroke="#2B2933" stroke-width="12"/>
+</svg>

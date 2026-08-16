@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- 単色ロゴマーク(案Dの e モノグラム/背景透過)。色は fill / stroke を差し替えて使用 -->
-  <path d="M 832 641 A 345 345 0 1 1 832 383"
-        fill="none" stroke="#2B2933" stroke-width="132" stroke-linecap="round"/>
-  <polygon points="209,512 539,431 539,593" fill="#2B2933" opacity="0.5"/>
-  <polygon points="539,431 944,512 539,593" fill="#2B2933"/>
+  <!-- 単色ロゴマーク(v3/背景透過)。残像の針は透過で表現し、1色でも「振れ」が伝わる -->
+  <circle cx="512" cy="512" r="400" fill="none" stroke="#2B2933" stroke-width="30"/>
+  <g transform="rotate(-32 512 512)">
+    <polygon points="512,162 558,512 466,512" fill="#2B2933" opacity="0.4"/>
+    <polygon points="466,512 558,512 512,862" fill="#2B2933" opacity="0.4"/>
+  </g>
+  <g transform="rotate(32 512 512)">
+    <polygon points="512,162 558,512 466,512" fill="#2B2933"/>
+    <polygon points="466,512 558,512 512,862" fill="#2B2933"/>
+  </g>
+  <circle cx="512" cy="512" r="26" fill="#FFFFFF" stroke="#2B2933" stroke-width="14"/>
 </svg>
