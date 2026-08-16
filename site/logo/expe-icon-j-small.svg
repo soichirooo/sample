@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- v5 小サイズ用(64px以下)
+       目盛りと東西南のドットを省き、リングと針を太らせた強度優先版。構成は同一 -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <circle cx="512" cy="512" r="350" fill="none" stroke="#2B2933" stroke-width="28"/>
+  <circle cx="512" cy="112" r="14" fill="#B3A1D6"/>
+  <g transform="rotate(-30 512 512)">
+    <path d="M 512 512 C 478 440, 472 340, 496 262 A 18 18 0 0 1 528 262 C 552 340, 546 440, 512 512 Z"
+          fill="#B3A1D6"/>
+    <path d="M 512 512 C 478 584, 472 684, 496 762 A 18 18 0 0 0 528 762 C 552 684, 546 584, 512 512 Z"
+          fill="#B3A1D6" opacity="0.6"/>
+  </g>
+  <g transform="rotate(30 512 512)">
+    <path d="M 512 512 C 478 440, 472 340, 496 262 A 18 18 0 0 1 528 262 C 552 340, 546 440, 512 512 Z"
+          fill="#2B2933"/>
+    <path d="M 512 512 C 478 584, 472 684, 496 762 A 18 18 0 0 0 528 762 C 552 684, 546 584, 512 512 Z"
+          fill="#2B2933" opacity="0.6"/>
+  </g>
+  <circle cx="512" cy="512" r="14" fill="#F7F2E8" stroke="#2B2933" stroke-width="10"/>
+</svg>

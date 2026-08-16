@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exSpace ロゴ刷新案 v4</title>
+  <title>exSpace ロゴ刷新案 v5</title>
   <style>
     :root {
       --bg: #FAFAF8;
@@ -59,27 +59,63 @@
     .cell { text-align: center; }
     .cell span { display: block; font-size: 11px; color: var(--sub); margin-top: 10px; }
     .icon { border-radius: 22.37%; display: block; overflow: hidden; }
-    .icon.s200 { width: 200px; height: 200px; }
+    .icon.s240 { width: 240px; height: 240px; }
     .icon.s96 { width: 96px; height: 96px; }
     .icon.s48 { width: 48px; height: 48px; }
     .icon.s32 { width: 32px; height: 32px; }
     svg { display: block; width: 100%; height: 100%; }
     ul { padding-left: 1.4em; font-size: 14px; }
+    details { margin-top: 48px; }
+    summary { cursor: pointer; font-size: 14px; color: var(--sub); }
+    details .row { margin-top: 16px; }
   </style>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute">
   <defs>
-    <symbol id="ic-h" viewBox="0 0 1024 1024">
+    <symbol id="ic-j" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
-      <path d="M 566 816 A 270 270 0 1 1 697 685"
-            fill="none" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
-      <line x1="186" y1="571" x2="718" y2="571" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
-      <path d="M 757 148 Q 777 246 875 266 Q 777 286 757 384 Q 737 286 659 266 Q 737 246 757 148 Z"
-            fill="#B3A1D6" stroke="#B3A1D6" stroke-width="34" stroke-linejoin="round"/>
+      <circle cx="512" cy="512" r="350" fill="none" stroke="#2B2933" stroke-width="18"/>
+      <circle cx="512" cy="512" r="295" fill="none" stroke="#2B2933" stroke-width="11"
+              stroke-linecap="round" stroke-dasharray="0.1 51.5" opacity="0.45"/>
+      <circle cx="512" cy="112" r="12" fill="#B3A1D6"/>
+      <circle cx="912" cy="512" r="7" fill="#2B2933" opacity="0.65"/>
+      <circle cx="512" cy="912" r="7" fill="#2B2933" opacity="0.65"/>
+      <circle cx="112" cy="512" r="7" fill="#2B2933" opacity="0.65"/>
+      <g transform="rotate(-30 512 512)">
+        <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
+              fill="#B3A1D6" opacity="0.9"/>
+        <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
+              fill="#B3A1D6" opacity="0.5"/>
+      </g>
+      <g transform="rotate(30 512 512)">
+        <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
+              fill="#2B2933"/>
+        <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
+              fill="#2B2933" opacity="0.55"/>
+      </g>
+      <circle cx="512" cy="512" r="12" fill="#F7F2E8" stroke="#2B2933" stroke-width="8"/>
     </symbol>
-    <symbol id="ic-i" viewBox="0 0 1024 1024">
+    <symbol id="ic-j-small" viewBox="0 0 1024 1024">
+      <rect width="1024" height="1024" fill="#F7F2E8"/>
+      <circle cx="512" cy="512" r="350" fill="none" stroke="#2B2933" stroke-width="28"/>
+      <circle cx="512" cy="112" r="14" fill="#B3A1D6"/>
+      <g transform="rotate(-30 512 512)">
+        <path d="M 512 512 C 478 440, 472 340, 496 262 A 18 18 0 0 1 528 262 C 552 340, 546 440, 512 512 Z"
+              fill="#B3A1D6"/>
+        <path d="M 512 512 C 478 584, 472 684, 496 762 A 18 18 0 0 0 528 762 C 552 684, 546 584, 512 512 Z"
+              fill="#B3A1D6" opacity="0.6"/>
+      </g>
+      <g transform="rotate(30 512 512)">
+        <path d="M 512 512 C 478 440, 472 340, 496 262 A 18 18 0 0 1 528 262 C 552 340, 546 440, 512 512 Z"
+              fill="#2B2933"/>
+        <path d="M 512 512 C 478 584, 472 684, 496 762 A 18 18 0 0 0 528 762 C 552 684, 546 584, 512 512 Z"
+              fill="#2B2933" opacity="0.6"/>
+      </g>
+      <circle cx="512" cy="512" r="14" fill="#F7F2E8" stroke="#2B2933" stroke-width="10"/>
+    </symbol>
+    <symbol id="ic-i-old" viewBox="0 0 1024 1024">
       <rect width="1024" height="1024" fill="#F7F2E8"/>
       <circle cx="512" cy="512" r="330" fill="none" stroke="#2B2933" stroke-width="60"/>
       <line x1="392" y1="392" x2="632" y2="632" stroke="#B3A1D6" stroke-width="88" stroke-linecap="round"/>
@@ -90,49 +126,55 @@
 </svg>
 
 <div class="wrap">
-  <h1>exSpace アプリアイコン刷新案 v4</h1>
-  <p class="lead">尖りを全て排除し、丸端のストロークだけで構成。Instagram と同じ「少ない要素+太い丸い線」の文法で、ex とコンパスを表現した2案です。</p>
+  <h1>exSpace アプリアイコン刷新案 v5「ペタル・コンパス」</h1>
+  <p class="lead">案Iの方向性(リング+x)のまま、「方位磁針に見えない」「儚さがない」「針に見えない」の3点を解消した案です。</p>
 
   <div class="concept">
-    <strong>v4 での変更点</strong>
+    <strong>v4 案Iからの直し方</strong>
     <ul>
-      <li><strong>鋭角ゼロ</strong>:針の鋭い三角をやめ、すべて丸端(round cap)のストロークと角丸の星に置き換えました。柔らかく女性的な印象を保ちます。</li>
-      <li><strong>Instagram 構造</strong>:「大きな主図形+小さなアクセント」の2〜3要素まで削減。48px・32px でも形がそのまま残ります。</li>
-      <li><strong>ex の表現</strong>:e は太い丸ストロークの小文字、x はコンパスローズ(4点星)または丸端のクロスとして担わせています。</li>
+      <li><strong>針に見せる</strong>:均一な丸棒をやめ、軸から花びらのように先細って丸く終わる「しずく型」の針に。尖りはないのに、計器の針として読めます。北側が濃く南側が淡い、方位磁針の伝統的な塗り分けも復活。</li>
+      <li><strong>方位磁針に見せる</strong>:現行ロゴにもあったドットの目盛りを内周に復活。細いベゼルリング、中央の軸、北のラベンダードット+東西南の小さなドットで、コンパスの記号を揃えました。</li>
+      <li><strong>儚さ</strong>:線をぐっと細く、目盛りは45%の淡さに。ラベンダーの針は「振れたあとの残像」で、南半分は50%まで消えかけています。x はこの2本の針が振れて重なった一瞬として現れます。</li>
     </ul>
   </div>
 
   <section>
-    <h2>案H|e × コンパスローズ<span class="badge">推奨</span></h2>
-    <p class="note">主役は太く丸い小文字「e」。その北東(=これから進む方角)に、角を丸めたコンパスローズの4点星を「x」として浮かべました。Instagram のフラッシュドットと同じ位置関係で、e と星の2要素だけ。星が方位磁針の記号(コンパスローズ)なので、柔らかいままモチーフが伝わります。</p>
+    <h2>本命<span class="badge">推奨</span></h2>
+    <p class="note">チャコールの針が「今」、ラベンダーの針が「ひとつ前の残像」。2本の交差が x を描きます。</p>
     <div class="row">
-      <div class="cell"><div class="icon s200"><svg><use href="#ic-h"/></svg></div><span>200px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-h"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-h"/></svg></div><span>48px(ホーム画面)</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-h"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s240"><svg><use href="#ic-j"/></svg></div><span>240px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-j"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-j"/></svg></div><span>48px(ホーム画面)</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-j"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
-    <h2>案I|ソフトダイヤル</h2>
-    <p class="note">文字盤リングの中で、丸端ストロークの「x」が交差する案。ラベンダーが振れた針の残像、チャコールが現在の針という v3 の物語を、尖りのない形に翻訳したものです。北東のジュエルドットが方位の輝き。リング・x・ドットの3要素で、コンパスの読みはこちらが最も強いです。</p>
+    <h2>小サイズ用(64px以下での出し分け)</h2>
+    <p class="note">目盛りと東西南のドットを省き、リングと針を太らせた強度優先版。ファビコンや通知アイコンにはこちらを使うと、儚さを本命に残したまま視認性を確保できます。</p>
     <div class="row">
-      <div class="cell"><div class="icon s200"><svg><use href="#ic-i"/></svg></div><span>200px</span></div>
-      <div class="cell"><div class="icon s96"><svg><use href="#ic-i"/></svg></div><span>96px</span></div>
-      <div class="cell"><div class="icon s48"><svg><use href="#ic-i"/></svg></div><span>48px(ホーム画面)</span></div>
-      <div class="cell"><div class="icon s32"><svg><use href="#ic-i"/></svg></div><span>32px</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-j-small"/></svg></div><span>96px</span></div>
+      <div class="cell"><div class="icon s48"><svg><use href="#ic-j-small"/></svg></div><span>48px</span></div>
+      <div class="cell"><div class="icon s32"><svg><use href="#ic-j-small"/></svg></div><span>32px</span></div>
     </div>
   </section>
 
   <section>
-    <h2>使い分けの目安</h2>
+    <h2>ファイル構成</h2>
     <ul>
-      <li><strong>案H</strong>:ブランド名(ex)の想起を優先。アイコン単体で「e」が読めるのはこちらだけ。</li>
-      <li><strong>案I</strong>:コンパスの読みを優先。x も明瞭で、最小サイズでの骨格はこちらが最強。</li>
-      <li>単色マーク <code>expe-mark.svg</code> は案Hベース(背景透過・1色)で更新済み。</li>
+      <li><code>expe-icon-j.svg</code> — 本命(アプリアイコン用マスター 1024px)</li>
+      <li><code>expe-icon-j-small.svg</code> — 小サイズ用(64px以下)</li>
+      <li><code>expe-mark.svg</code> — 単色・背景透過のロゴマーク(残像は透過表現、1色印刷でも成立)</li>
     </ul>
-    <p class="note" style="margin-top:12px">過去案(v1〜v3)のファイルは整理済み。git 履歴から復元できます。</p>
   </section>
+
+  <details>
+    <summary>比較用:v4 案I(丸棒の x)</summary>
+    <div class="row">
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-i-old"/></svg></div><span>v4-I</span></div>
+      <div class="cell"><div class="icon s96"><svg><use href="#ic-j"/></svg></div><span>v5(本命)</span></div>
+    </div>
+  </details>
 </div>
 </body>
 </html>

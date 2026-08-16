@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- v5「ペタル・コンパス」
+       花びら型に先細る2本の針(現在=チャコール、残像=ラベンダー)が振れて x を描く。
+       細いリング+ドットの目盛り+方位ドット+軸で方位磁針を明示。先端は全て丸い -->
+  <rect width="1024" height="1024" rx="229" fill="#F7F2E8"/>
+  <!-- 文字盤:細いリングとドットの目盛り -->
+  <circle cx="512" cy="512" r="350" fill="none" stroke="#2B2933" stroke-width="18"/>
+  <circle cx="512" cy="512" r="295" fill="none" stroke="#2B2933" stroke-width="11"
+          stroke-linecap="round" stroke-dasharray="0.1 51.5" opacity="0.45"/>
+  <!-- 方位:北はラベンダー、他は小さく控えめに -->
+  <circle cx="512" cy="112" r="12" fill="#B3A1D6"/>
+  <circle cx="912" cy="512" r="7" fill="#2B2933" opacity="0.65"/>
+  <circle cx="512" cy="912" r="7" fill="#2B2933" opacity="0.65"/>
+  <circle cx="112" cy="512" r="7" fill="#2B2933" opacity="0.65"/>
+  <!-- 残像の針(ラベンダー・儚く) -->
+  <g transform="rotate(-30 512 512)">
+    <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
+          fill="#B3A1D6" opacity="0.9"/>
+    <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
+          fill="#B3A1D6" opacity="0.5"/>
+  </g>
+  <!-- 現在の針(チャコール・北半分が濃い) -->
+  <g transform="rotate(30 512 512)">
+    <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
+          fill="#2B2933"/>
+    <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
+          fill="#2B2933" opacity="0.55"/>
+  </g>
+  <!-- 軸 -->
+  <circle cx="512" cy="512" r="12" fill="#F7F2E8" stroke="#2B2933" stroke-width="8"/>
+</svg>

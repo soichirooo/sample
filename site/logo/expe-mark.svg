@@ -1,8 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- 単色ロゴマーク(v4「e × コンパスローズ」/背景透過)。fill・stroke の色を差し替えて使用 -->
-  <path d="M 566 816 A 270 270 0 1 1 697 685"
-        fill="none" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
-  <line x1="186" y1="571" x2="718" y2="571" stroke="#2B2933" stroke-width="92" stroke-linecap="round"/>
-  <path d="M 757 148 Q 777 246 875 266 Q 777 286 757 384 Q 737 286 659 266 Q 737 246 757 148 Z"
-        fill="#2B2933" stroke="#2B2933" stroke-width="34" stroke-linejoin="round"/>
+  <!-- 単色ロゴマーク(v5「ペタル・コンパス」/背景透過)。残像は透過で表現し1色でも成立 -->
+  <circle cx="512" cy="512" r="350" fill="none" stroke="#2B2933" stroke-width="20"/>
+  <g transform="rotate(-30 512 512)">
+    <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
+          fill="#2B2933" opacity="0.4"/>
+    <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
+          fill="#2B2933" opacity="0.25"/>
+  </g>
+  <g transform="rotate(30 512 512)">
+    <path d="M 512 512 C 486 440, 482 340, 500 262 A 14 14 0 0 1 524 262 C 542 340, 538 440, 512 512 Z"
+          fill="#2B2933"/>
+    <path d="M 512 512 C 486 584, 482 684, 500 762 A 14 14 0 0 0 524 762 C 542 684, 538 584, 512 512 Z"
+          fill="#2B2933" opacity="0.55"/>
+  </g>
+  <circle cx="512" cy="512" r="12" fill="#FFFFFF" stroke="#2B2933" stroke-width="8"/>
 </svg>
